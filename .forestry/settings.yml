@@ -7,11 +7,9 @@ sections:
 - type: document
   path: about.md
   label: About
-  match: "**/*"
 - type: document
   path: _data/social_media.yml
   label: Social Media
-  match: "**/*"
 - type: jekyll-posts
   label: Posts
   create: all
