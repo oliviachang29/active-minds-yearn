@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<img src="/assets/images/lazy.jpg" data-src="{{page.featured_image}}" class="lazy post-page-featured-image">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">
+			<div class="post-page-container">
+				<div class="post-date-n-tags post-page-date-n-tags">
+					<span class="post-date">{{page.date | date_to_string}}</span>
+					{% for tag in page.tags %}
+						<a href="/tag/{{tag}}" class="post-tag"><span>{{tag}}</span></a>
+					{% endfor %}
+				</div>
+				<h1 class="post-title post-page-title">{{page.title}}</h1>
+				<h3 class="post-page-subheading">{{page.subheading}}</h3>
+				<!-- <hr class="divide-metadata-n-content"> -->
+				<div class="content post-content">
+					{{content}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+nav:
+- url: /
+  title: Home
+  identifier: home
+- url: "/blog"
+  name: Blog
+  identifier: blog
+- url: /motivation
+  name: Motivation
+  identifier: motivation
+- url: /about
+  name: About
+  identifier: about

@@ -1,0 +1,30 @@
+@import "variables";
+
+.navbar {
+	height: $navbar-height;
+	padding: 10px 20px;
+	color: white;
+	border-bottom: 1px solid $super-light-gray;
+}
+
+.navbar-brand {
+	/*font-family: DomaineDisplay-Regular;*/
+	font-family: BiancoSerifNew;
+	color: #000000;
+	letter-spacing: 0;
+	/*font-size: 12px;*/
+	/*text-transform: uppercase;*/
+
+}
+
+.nav-item {
+	margin-right: 10px;
+}
+
+.nav-link {
+	font-size: 13px;
+	font-family: Apercu-Mono;
+	text-transform: uppercase;
+	letter-spacing: 1.32px;
+	color: #000000;
+}

@@ -1,0 +1,128 @@
+@import "variables";
+
+#hero {
+ 	/*background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-attachment: fixed;*/
+ 	height: 80vh;
+ 	position: relative;
+
+ 	img {
+ 		object-fit: cover;
+ 		width: 100%;
+ 		height: 80vh;
+ 		position: absolute;
+ 		opacity: 0;
+ 		/*z-index:-1;*/
+ 	}
+}
+
+.post-container-hero {
+	/*margin-top: -50vh;*/
+	margin-left: 10vw;
+	position: absolute;
+	cursor: pointer;
+}
+
+.post-container-normal {
+	position: relative;
+	margin: 0 auto;
+}
+
+.post-container {
+	background-color: white;
+	border: $post-container-border;
+	width: 50vw;
+	max-width: 600px;
+	padding: 50px;
+	background: #FFFFFF;
+	box-shadow: $pink-box-shadow-left;
+}
+
+.post-title {
+	font-family: DomaineDisplay-Regular;
+	/*font-size: 49.39px;*/
+	letter-spacing: 0;
+	margin-bottom: 15px;
+}
+
+.post-subheading {
+	font-family: BiancoSerifNew;
+	font-size: 15px;
+	color: $light-gray-text;
+	letter-spacing: 0;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+span {
+	font-family: Apercu-Mono;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1.32px;
+}
+
+.post-date {
+	margin-right: 20px;
+}
+
+.post-tag {
+	color: #9B9B9B;
+	margin-right: 5px;
+}
+
+.normal-posts-container {
+	
+}
+
+.normal-post-outer-container {
+	height: 80vh;
+}
+
+.normal-post-link-container {
+
+}
+
+.normal-post-image {
+	width: 50vw;
+	/*width: 700px;*/
+	margin-top: -5vh;
+	max-height: 60vh;
+	object-fit: cover;
+	position: absolute;
+	opacity: 0;
+}
+
+.normal-post-image-left-side {
+	img {
+		left: 0;
+		margin-left: 10vw;
+	}
+	.post-container-normal {
+		margin-left: 20vw;
+		box-shadow: $pink-box-shadow-right;
+	}
+}
+
+.normal-post-image-right-side {
+	img {
+		right: 0;
+		margin-right: 10vw;
+	}
+	.post-container-normal {
+		margin-right: 20vw;
+	}
+}
+
+.post-container-normal {
+	z-index: 100;
+}
+
+.dashed-line {
+	height: 1px;
+	background-image: linear-gradient(90deg, #000, #000 75%, transparent 75%, transparent 100%);
+	background-size: 20px 1px;
+	border: none;
+	transform: rotate(90deg);
+	/*z-index:-1;*/
+}

@@ -1,0 +1,8 @@
+<div class="post-container {{include.post_container_class}}">
+	<h1 class="post-title">{{include.title}}</h1>
+	<h3 class="post-subheading">{{include.subheading}}</h3>
+	<div class="post-date-n-tags">
+		<span class="post-date">{{include.date | date_to_string}}</span>
+		<span class="post-tag">{{include.tag}}</span>
+	</div>
+</div>
