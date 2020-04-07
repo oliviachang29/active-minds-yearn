@@ -8,8 +8,8 @@
 }
 
 .navbar-brand {
-	/*font-family: DomaineDisplay-Regular;*/
-	font-family: BiancoSerifNew;
+	/*font-family: $title-font;*/
+	font-family: $paragraph-font;
 	color: #000000;
 	letter-spacing: 0;
 	/*font-size: 12px;*/
@@ -23,7 +23,7 @@
 
 .nav-link {
 	font-size: 13px;
-	font-family: Apercu-Mono;
+	font-family: $link-font;
 	text-transform: uppercase;
 	letter-spacing: 1.32px;
 	color: #000000;

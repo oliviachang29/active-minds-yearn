@@ -10,8 +10,7 @@
 	margin: 0 auto;*/
 
 	img {
-		border: $post-container-border;
-		box-shadow: $pink-box-shadow-left;
+		@include pink-box-shadow-left;
 	}
 }
 

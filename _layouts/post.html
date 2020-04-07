@@ -9,9 +9,7 @@ layout: default
 			<div class="post-page-container">
 				<div class="post-date-n-tags post-page-date-n-tags">
 					<span class="post-date">{{page.date | date_to_string}}</span>
-					{% for tag in page.tags %}
-						<a href="/tag/{{tag}}" class="post-tag"><span>{{tag}}</span></a>
-					{% endfor %}
+					{% include blog_post/tags.html tags=page.tags %}
 				</div>
 				<h1 class="post-title post-page-title">{{page.title}}</h1>
 				<h3 class="post-page-subheading">{{page.subheading}}</h3>

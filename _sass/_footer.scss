@@ -1,14 +1,8 @@
 @import "variables";
 
-main {
-	min-height: 100vh; /* will cover the 100% of viewport */
-	overflow: hidden;
-	display: block;
-	position: relative;
-	padding-bottom: 20vh;
-}
-
 footer {
+	height: 100px;
+	padding: 10px 0;
 	position: absolute;
  	bottom: 0;
 	width: 100%;
@@ -21,7 +15,6 @@ footer {
 
 #footer-content {
 	justify-content: space-between;
-	padding: 10px 0 50px;
 }
 
 #copyright {

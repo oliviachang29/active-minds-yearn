@@ -16,7 +16,7 @@ collection:
   posts:
     title: Post
     output: true
-    permalink: /blog/:year/:month/:day/:title:output_ext
+    permalink: /blog/:title:output_ext
     layout: post
 tag_page_layout: tag
 tag_page_dir: tag

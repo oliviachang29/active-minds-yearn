@@ -10,11 +10,16 @@ html, body {
 }
 
 main {
-  /*min-height: 100vh;*/
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-top: $navbar-height;
+  padding-bottom: 200px; /* still weird */
 }
 
 * {
-  font-family: BiancoSerifNew,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: $paragraph-font,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .transition-fade {
@@ -33,4 +38,29 @@ html.is-animating .transition-fade{
 
 hr {
   color: $super-light-gray;
+}
+
+.button {
+  padding: 15px 10px;
+  width: 190px;
+  text-align: center;
+  text-decoration: none !important;
+  background: transparent;
+  border: 1px solid black;
+  font-family: $link-font;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  @include smooth-transition;
+  &:hover {
+    background-color: #00000007;
+  }
+}
+
+.newsletter-container {
+  @include pink-box-shadow-left;
+  width: 80%;
+  max-width: 600px;
+  padding: 50px 30px;
+  margin: 20px auto;
 }

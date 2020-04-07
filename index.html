@@ -1,40 +1,11 @@
 ---
 layout: default
-menus: header
 title: Home
+menus:
+  header:
+    title: Home
+    weight: 1
 ---
-<!-- fix -->
-<!-- <div class="dashed-line"></div> -->
 
-{% assign first_post = site.posts.first %}
-<a class="d-flex flex-column justify-content-center align-items-start" id="hero" href="{{first_post.url}}">
-	<img src="/assets/images/lazy.jpg" data-src="{{first_post.featured_image}}" class="lazy">
-	{% include post-container.html 
-		title=first_post.title
-		subheading=first_post.subheading
-		date=first_post.date
-		tag=first_post.tag
-		post_container_class="post-container-hero" 
-	%}
-</a>
 
-<!-- normal posts: posts that aren't first -->
-<div class="container-fluid d-flex flex-column align-items-center normal-posts-container">
-	<div class="dashed-line-container"></div>
-	{% for post in site.posts %}
-		{% unless forloop.first %}
-			<div class="normal-post-outer-container d-flex flex-column justify-content-center {% cycle 'normal-post-image-left-side', 'normal-post-image-right-side' %}">
-				<a class="normal-post-link-container" href="{{post.url}}">
-					<img src="/assets/images/lazy.jpg" data-src="{{post.featured_image}}" class="lazy normal-post-image">
-					{% include post-container.html 
-						title=post.title
-						subheading=post.subheading
-						date=post.date
-						tag=post.tag
-						post_container_class="post-container-normal" 
-					%}
-				</a>
-			</div>
-		{% endunless %}
-	{% endfor %}
-</div>
+<h1>home page still in progress</h1>

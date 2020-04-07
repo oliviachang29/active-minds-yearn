@@ -1,15 +1,48 @@
+/* BOOTSRAP MEDIA QUERIES */
 $xs: 480px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 
+/* FONTS */
+$title-font: 'Domaine Display';
+$paragraph-font: 'Bianco Serif New';
+$link-font: 'Apercu Mono';
+
+/* COLORS */
 $super-light-gray: #EAEAEA;
 $light-gray-text: #666666;
 $dark-gray-text: #2E2E2E;
 $pink: #F4D5E2;
 
-$post-container-border: 1px solid #4A4A4A;
-$pink-box-shadow-left: -10px 10px 0 0 #F4D5E2, -10px 10px 0 1px #4A4A4A;
-$pink-box-shadow-right: 10px 10px 0 0 $pink, 10px 10px 0 1px #4A4A4A !important;
-
+/* HEIGHTS */
 $navbar-height: 60px;
+
+/* MIXINS */
+
+@mixin smooth-transition {
+  -webkit-transition: all 0.25s; /* Safari and Chrome */
+  -moz-transition: all 0.25s; /* Firefox */
+  -ms-transition: all 0.25s; /* IE 9 */
+  -o-transition: all 0.25s; /* Opera */
+  transition: all 0.25s;
+}
+
+@mixin image-scale-up($image-scale) {
+	-webkit-transform:scale($image-scale);
+    -moz-transform:scale($image-scale);
+    -ms-transform:scale($image-scale);
+    -o-transform:scale($image-scale);
+     transform:scale($image-scale);
+}
+
+/* pink border mixins */
+$post-container-border: 1px solid #4A4A4A;
+@mixin pink-box-shadow-left {
+	border: $post-container-border;
+	box-shadow: -10px 10px 0 0 $pink, -10px 10px 0 1px #4A4A4A;
+}
+@mixin pink-box-shadow-right {
+	border: $post-container-border;
+	box-shadow: 10px 10px 0 0 $pink, 10px 10px 0 1px #4A4A4A !important;
+}

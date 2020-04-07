@@ -3,7 +3,9 @@ layout: default
 ---
 <div class="container">
 	<h1>Posts tagged "{{ page.tag }}"</h1>
-	{% for post in site.tags[page.tag] %}
-		<h1>{{post.title}}</h1>
-	{% endfor %}
+	<div class="d-flex flex-column align-items-center">
+		{% for post in site.tags[page.tag] %}
+			{% include blog_post/card.html post=post %}
+		{% endfor %}
+	</div>
 </div>

@@ -1,16 +1,47 @@
 @import "variables";
 
+@font-face {
+	font-family: 'Domaine Display';
+	src: url('/assets/fonts/Domaine-Display-Regular.ttf')  format('truetype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Domaine Display';
+	src: url('/assets/fonts/Domaine-Display-Regular-Italic.ttf')  format('truetype');
+	font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: 'Bianco Serif New';
+	src: url('/assets/fonts/Bianco-Serif-New.otf')  format('opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Apercu Mono';
+	src: url('/assets/fonts/Apercu-Mono.ttf')  format('truetype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+
 h1, h2 {
-	font-family: DomaineDisplay-Regular;
+	font-family: $title-font;
+	/*font-family: BureauGrotesque-OneFive;*/
+	/*text-transform: uppercase;*/
 	margin-bottom: 20px;
 }
 
 h3, h4, p {
-	font-family: BiancoSerifNew;
+	font-family: $paragraph-font;
 }
 
 h5, h6 {
-	font-family: Apercu-Mono;
+	font-family: $link-font;
 	text-transform: uppercase;
 	letter-spacing: 1.32px;
 }

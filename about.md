@@ -3,10 +3,10 @@ layout: about
 title: About
 permalink: "/about"
 personal_image: "/assets/images/person.jpg"
-menu:
+menus:
   header:
+    title: About
     weight: 4
-
 ---
 # About Me
 
