@@ -1,7 +1,6 @@
 <div class="newsletter-container">
-	<h3>Subscribe to my newsletter</h3>
-	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	<form>
-		<input type="text">
-	</form>
+	<h3 class="newsletter-title">{{site.data.general.newsletter.title}}</h3>
+	<p class="newsletter-description">{{site.data.general.newsletter.description}}</p>
+	<!-- Begin Mailchimp Signup Form -->
+	{% include blog_post/mailchimp.html %}
 </div>

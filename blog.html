@@ -18,7 +18,8 @@ menus:
 </div>
 
 <!-- other posts -->
-<div class="container d-flex flex-column align-items-center">
+<div class="container d-flex flex-column align-items-center bottom-posts-container">
+	
 	{% for post in site.posts %}
 		{% unless forloop.first %}
 			{% include blog_post/card.html post=post %}

@@ -1,0 +1,28 @@
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $light-gray;
+  border-radius: 0;
+  padding-left: 0;
+  &:focus {
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.email-input {
+  margin: 15px 0 30px;
+}
+
+.newsletter-container {
+  @include pink-box-shadow-left;
+  width: 80%;
+  max-width: 600px;
+  padding: 50px 30px;
+  margin: 20px auto;
+}
+
+.newsletter-description {
+}
