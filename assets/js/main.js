@@ -18,6 +18,17 @@ function initJS() {
       });
     });
 
+    // var $grid = $('.grid').masonry({
+    //   // options...
+    //   itemSelector: '.grid-item',
+    //   // columnWidth: 300,
+    //   gutter: 10
+    // });
+
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
+
     // var lazyLoadInstance = new LazyLoad({
     //     elements_selector: ".lazy"
     // });

@@ -7,3 +7,26 @@ menus:
     title: Motivation
     weight: 3
 ---
+<div class="container">
+	<h1 class="page-mini-title">Daily Motivation</h1>
+<!-- 	<div class="grid">
+		{% for item in site.motivation %}
+			<div class="grid-item">
+				{% include motivation/card.html item=item %}
+			</div>				     
+		{% endfor %}
+	</div> -->
+	<div class="row">
+		<div class="motivation-card col-xs-12 motivation-1">
+			{% include motivation/card.html item=site.motivation.first %}
+		</div>
+		{% for item in site.motivation %}
+			{% unless forloop.first %}
+				<div class="motivation-card	{% cycle 'col-md-6 motivation-2', 'col-md-6 motivation-2', 
+												     'col-md-4 motivation-3', 'col-md-4 motivation-3', 'col-md-4 motivation-3' %}">
+					{% include motivation/card.html item=item %}
+				</div>	
+			{% endunless %}			     
+		{% endfor %}
+	</div>
+</div>

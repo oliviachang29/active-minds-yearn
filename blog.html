@@ -7,19 +7,10 @@ menus:
     title: Blog
     weight: 2
 ---
-
-<!-- first post -->
-{% assign first_post = site.posts.first %}
-<div class="d-flex flex-column justify-content-center align-items-start" id="hero">
-	<a href="{{first_post.url}}" class="post-first-image-container">
-		<img src="/assets/images/lazy.jpg" data-src="{{first_post.featured_image}}" class="lazy">
-	</a>
-	{% include blog_post/first_post.html post=first_post %}
-</div>
-
-<!-- other posts -->
-<div class="container d-flex flex-column align-items-center bottom-posts-container">
-	
+<div class="container d-flex flex-column align-items-center">
+	<!-- first post -->
+	{% include blog_post/card.html post=site.posts.first container_class="post-card-first-post-container" %}
+	<!-- other posts -->
 	{% for post in site.posts %}
 		{% unless forloop.first %}
 			{% include blog_post/card.html post=post %}

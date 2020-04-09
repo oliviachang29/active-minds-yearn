@@ -10,12 +10,12 @@ html, body {
 }
 
 main {
-  min-height: 100vh; /* will cover the 100% of viewport */
+  /*padding-top: $navbar-height;*/
+  /*min-height: 100vh; // will cover the 100% of viewport
   overflow: hidden;
   display: block;
   position: relative;
-  padding-top: $navbar-height;
-  padding-bottom: 200px; /* still weird */
+  padding-bottom: 200px; // still weird*/
 }
 
 * {
@@ -54,5 +54,18 @@ hr {
   @include smooth-transition;
   &:hover {
     background-color: #00000007;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.default-page-container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  @media (min-width: $md) {
+    padding-top: 70px;
   }
 }

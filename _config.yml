@@ -12,12 +12,20 @@ exclude:
   - Gemfile.lock
 sass:
   style: compressed
-collection:
+collections:
   posts:
     title: Post
     output: true
-    permalink: /blog/:title:output_ext
+    permalink: /blog/:year-:month-:day-:title:output_ext
     layout: post
+  motivation:
+    title: Motivation
+    layout: motivation_item
+    output: true
+    permalink: /motivation/:year-:month-:day:output_ext
+  uploads:
+    title: Uploads
+    output: false
 tag_page_layout: tag
 tag_page_dir: tag
 plugins:
