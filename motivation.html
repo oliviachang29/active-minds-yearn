@@ -17,15 +17,15 @@ menus:
 		{% endfor %}
 	</div> -->
 	<div class="row">
-		<div class="motivation-card col-xs-12 motivation-1">
+		<a class="motivation-card col-xs-12 motivation-1" href="{{site.motivation.first.url}}">
 			{% include motivation/card.html item=site.motivation.first %}
-		</div>
+		</a>
 		{% for item in site.motivation %}
 			{% unless forloop.first %}
-				<div class="motivation-card	{% cycle 'col-md-6 motivation-2', 'col-md-6 motivation-2', 
-												     'col-md-4 motivation-3', 'col-md-4 motivation-3', 'col-md-4 motivation-3' %}">
+				<a class="motivation-card	{% cycle 'col-md-6 motivation-2', 'col-md-6 motivation-2', 
+												     'col-md-4 motivation-3', 'col-md-4 motivation-3', 'col-md-4 motivation-3' %}" href="{{item.url}}">
 					{% include motivation/card.html item=item %}
-				</div>	
+				</a>	
 			{% endunless %}			     
 		{% endfor %}
 	</div>

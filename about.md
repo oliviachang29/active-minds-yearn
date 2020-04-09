@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: "/about"
-personal_image: "/assets/images/person.jpg"
+personal_image: "/uploads/about_me.jpeg"
 menus:
   header:
     title: About
