@@ -6,7 +6,11 @@
 		<!-- for apply flex styling -->
 		<div id="footer-content" class="d-flex flex-row">
 			<p id="copyright" class="mono">&#xa9; <script>document.write(new Date().getFullYear())</script> {{site.title}}. All rights reserved. Site by <a href="https://oliviachang.me">Olivia Chang</a>.</p>
-			{% include social_media_icons.html %}
+			<div id="contact-links" class="links-container">
+				{% for link in site.data.social_media %}
+					{% include social_media_icon_renderer.html link=link %}
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </footer>

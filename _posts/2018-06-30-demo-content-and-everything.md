@@ -40,21 +40,6 @@ You can throw in some horizontal rules too:
 <img src="/assets/images/demo-square.jpg">
 <img src="/assets/images/demo-landscape-2.jpg">
 
-Inspired by the Galleries feature from WordPress, we've made it easy to create grid layouts for your images. Just use a bit of simple HTML in your post to create a masonry grid image layout:
-
-```html
-<div class="gallery" data-columns="3">
-    <img src="/assets/images/demo-portrait.jpg">
-    <img src="/assets/images/demo-landscape.jpg">
-    <img src="/assets/images/demo-square.jpg">
-    <img src="/assets/images/demo-landscape-2.jpg">
-</div>
-```
-
-*See what we did there? Code and syntax highlighting is built-in too!*
-
-Change the number inside the 'columns' setting to create different types of gallery for all kinds of purposes. You can even click on each image to seamlessly enlarge it on the page.
-
 ---
 
 ### What about videos?
@@ -62,13 +47,5 @@ Change the number inside the 'columns' setting to create different types of gall
 Videos are an awesome way to show off your work in a more engaging and personal way, and we’ve made sure they work great on our themes. Just paste an embed code from YouTube or Vimeo, and the theme makes sure it displays perfectly:
 
 <iframe src="https://player.vimeo.com/video/148003889" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
----
-
-## Pretty cool, huh?
-
-We've packed this theme with powerful features to show off your work.
-
-Why not put them to use on your new portfolio?
 
 <!-- <a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button-large">Get This Theme</a> -->
