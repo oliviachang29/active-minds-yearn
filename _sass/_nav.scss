@@ -2,18 +2,18 @@
 
 .navbar {
 	/*height: $navbar-height;*/
-	padding: 10px 80px;
+	padding: 10px 20px;
+	@media (min-width: $md) {
+		padding: 10px 80px;	
+	}
 	background-color: white;
 	border-bottom: 1px solid $super-light-gray;
 }
 
 .navbar-brand {
-	/*font-family: $title-font;*/
-	font-family: $paragraph-font;
+	font-family: $title-font;
 	color: #000000;
 	letter-spacing: 0;
-	/*font-size: 12px;*/
-	/*text-transform: uppercase;*/
 	margin-right: 20px;
 }
 
@@ -28,10 +28,8 @@
 }
 
 .nav-link {
-	font-size: 14px;
-	font-family: $link-font;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	font-size: 16px;
+	font-family: $paragraph-font;
 	color: $light-gray-text !important; 
 	&:hover {
 		color: $vivid-pink !important;
@@ -43,7 +41,15 @@
 }
 
 .nav-item .contact-icon {
-	padding: 10px 5px;
+	padding: 10px;
 	font-size: 20px;
 	color: $vivid-pink;
+}
+
+.nav-social-links {
+	@media (max-width: $md) {
+		width: 100%;
+	}
+	display: flex;
+	flex-direction: row;
 }

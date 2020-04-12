@@ -20,9 +20,19 @@
 	position: relative;
 	padding: 0;
 	background-color: $dark-gray-text;
+	overflow: hidden;
 	img {
 		object-fit: cover;
-		filter: brightness(0.5);
+		filter: brightness(0.7);
+		@include smooth-transition;
+	}
+}
+
+.motivation-card-image-scale {
+	&:hover {
+		img {
+			@include image-scale-up(1.1);
+		}
 	}
 }
 

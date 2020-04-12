@@ -82,3 +82,21 @@
 	text-decoration: underline;
 	margin: 30px 0 50px;
 }
+
+/* Pagination */
+
+.pagination-nav {
+	margin-bottom: 30px;
+}
+
+.page-item.active .page-link {
+	background-color: $vivid-pink;
+	border-color: $vivid-pink;
+}
+
+.page-link {
+	color: $vivid-pink;
+	&:hover {
+		color: $vivid-pink;
+	}
+}

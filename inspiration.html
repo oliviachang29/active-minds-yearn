@@ -2,10 +2,6 @@
 layout: default
 title: Inspiration
 permalink: "/inspiration"
-menus:
-  header:
-    title: Inspiration
-    weight: 3
 ---
 <div class="first-post-background"></div>
 <div class="container">
@@ -14,7 +10,13 @@ menus:
 		{% for item in site.motivation %}
 			<div class="w-100 {% cycle 'col-xs-12 motivation-1',
 								 'col-md-6 motivation-2', 'col-md-6 motivation-2', %}">
-				{% include motivation/card.html item=item %}
+				{% include motivation/card.html
+					quote=item.quote
+					author=item.author
+					image=item.image
+					url=item.url
+					image_scale="true"
+				%}
 			</div>     
 		{% endfor %}
 	</div>

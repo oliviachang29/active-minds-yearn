@@ -15,4 +15,5 @@ group :jekyll_plugins do
    gem "hawkins"
    gem "jekyll-tagging"
    gem "jekyll-menus"
+   gem 'jekyll-paginate-v2'
 end

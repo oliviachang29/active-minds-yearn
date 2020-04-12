@@ -1,40 +1,39 @@
 ---
 layout: default
 title: Blog
-permalink: "/blog"
-menus:
-  header:
-    title: Blog
-    weight: 2
+permalink: "/" # keep as / and not /blog
+pagination:
+  enabled: true
 ---
 <div class="first-post-background"></div>
 
-{% assign first_post = site.posts.first %}
-
 <div class="container d-flex flex-column align-items-center blog-page-container">
-	<div class="first-post post-page-container">
-		<h1 class="post-title first-post-title">{{first_post.title}}</h1>
-		<h3 class="post-subheading first-post-subheading">{{first_post.subheading}}</h3>
-		<div class="post-date-n-tags first-postdate-n-tags d-flex flex-row justify-content-center align-items-center">
-			<span class="post-date">{{first_post.date | date_to_string}}</span>
-			{% include blog_post/tags.html tags=first_post.tags %}
-		</div>
-		<div class="first-post-image-container">
-			<img src="/assets/images/lazy.jpg" data-src="{{first_post.featured_image}}" class="lazy first-post-image">
-		</div>
-		<div class="first-post-content content">
-			{{first_post.content}}
-			<div class="share-bar">
-				<h4>Share this</h4>
-				{% include share-icons.html %}
-			</div>
-		</div>
-	</div>
-	
 	<!-- other posts -->
-	{% for post in site.posts %}
-		{% unless forloop.first %}
+	{% for post in paginator.posts %}
+		{% if forloop.first %}
+			<div class="first-post post-page-container">
+				<h1 class="post-title first-post-title">{{post.title}}</h1>
+				<h3 class="post-subheading first-post-subheading">{{post.subheading}}</h3>
+				<div class="post-date-n-tags first-postdate-n-tags d-flex flex-row justify-content-center align-items-center">
+					<span class="post-date">{{post.date | date_to_string}}</span>
+					{% include blog_post/tags.html tags=post.tags %}
+				</div>
+				<div class="first-post-image-container">
+					<img src="/assets/images/lazy.jpg" data-src="{{post.featured_image}}" class="lazy first-post-image">
+				</div>
+				<div class="first-post-content content">
+					{{post.content}}
+					<div class="share-bar">
+						<h4>Share this</h4>
+						{% include share-icons.html %}
+					</div>
+					{% include blog_post/disqus.html %}
+				</div>
+			</div>
+		{% else %}
 			{% include blog_post/card.html post=post %}
-		{% endunless %}
+		{% endif %}
 	{% endfor %}
+
+	{% include blog_post/pagination.html %}
 </div>

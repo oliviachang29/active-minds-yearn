@@ -1,0 +1,13 @@
+header:
+  - url: /
+    title: Home
+    identifier: Home
+  - url: /blog
+    title: Blog
+    identifier: blog
+  - url: /inspiration
+    title: Inspiration
+    identifier: inspiration
+  - url: /about
+    title: About
+    identifier: about

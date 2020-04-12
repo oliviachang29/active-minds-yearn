@@ -43,3 +43,12 @@ defaults:
       type: "motivation"
     values:
       layout: "motivation_item"
+pagination:
+  enabled: true
+  sort_reverse: true
+  per_page: 3
+  indexpage: 'blog'
+  permalink: /:num/
+  trail: 
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page

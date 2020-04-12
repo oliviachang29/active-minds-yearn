@@ -20,7 +20,6 @@ main {
 
 * {
   font-family: $paragraph-font,Helvetica Neue,Helvetica,Arial,sans-serif;
-  @include smooth-transition;
 }
 
 .transition-fade {
@@ -91,4 +90,18 @@ hr {
   font-size: 24px;
   padding: 10px;
   color: $vivid-pink !important;
+}
+
+.first-post-background {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  background-color: $pink-bg-color;
+  height: 40vh;
+  min-height: 400px;
+  @media (min-width: $md) {
+    height: 60vh;
+    min-height: 600px;
+  }
 }

@@ -1,9 +1,14 @@
-<a href="{{include.item.url}}">
-	<div class="motivation-card pink-box-shadow-left w-100">
-		<img class="lazy w-100 h-100" src="/assets/images/lazy.jpg" data-src="{{include.item.image}}">
+<a href="{{include.url}}">
+	<div class="motivation-card pink-box-shadow-left w-100
+		{% if include.image_scale == 'true' %} motivation-card-image-scale {% endif %}">
+		<img class="lazy w-100 h-100" src="/assets/images/lazy.jpg" data-src="{{include.image}}">
 		<div class="inspiration-card-text">
-			<p class="inspiration-quote">{{ include.item.quote }}</p>
-			<p class="inspiration-author">{{ include.item.author }}</p>
+			{% if include.quote and include.quote != "" and include.quote != nil %}
+				<p class="inspiration-quote">{{ include.quote }}</p>
+			{% endif %}
+			{% if include.author and include.author != "" and include.author != nil %}
+				<p class="inspiration-author">{{ include.author }}</p>
+			{% endif %}
 		</div>
 	</div>
 </a>
