@@ -19,6 +19,10 @@ layout: default
 		<div class="content post-content">
 			{{content}}
 		</div>
+		<div class="share-bar">
+			<h4>Share this</h4>
+			{% include share-icons.html %}
+		</div>
 		<div class="row next-n-prev-post-navigation">
 			<div class="col text-left">
 				<!-- ex: << Next Post -->
@@ -34,8 +38,6 @@ layout: default
 				{% endif %}
 			</div>
 		</div>
-		<!-- {% include blog_post/disqus.html %} -->
+		{% include blog_post/disqus.html %}
 	</div>
 </div>
-
-{% include blog_post/newsletter.html %}

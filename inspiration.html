@@ -1,0 +1,21 @@
+---
+layout: default
+title: Inspiration
+permalink: "/inspiration"
+menus:
+  header:
+    title: Inspiration
+    weight: 3
+---
+<div class="first-post-background"></div>
+<div class="container">
+	<h1 class="page-title">Inspiration</h1>
+	<div class="row">
+		{% for item in site.motivation %}
+			<div class="w-100 {% cycle 'col-xs-12 motivation-1',
+								 'col-md-6 motivation-2', 'col-md-6 motivation-2', %}">
+				{% include motivation/card.html item=item %}
+			</div>     
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,10 @@
+@import "variables";
+.about-content {
+	text-align: center;
+	padding: 70px 20px 30px;
+	margin: 0 auto;
+	@include container-widths;
+	img {
+		@include pink-box-shadow-left;
+	}
+}

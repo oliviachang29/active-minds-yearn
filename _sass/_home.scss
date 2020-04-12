@@ -1,0 +1,43 @@
+.carousel-item {
+	height: 70vh;
+	img {
+		object-fit: cover;
+	}
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.home-section-text {
+	p {
+		margin-bottom: 50px;
+	}
+}
+
+.home-section-image-container {
+	/*height: auto;*/
+	margin: 0 30px;
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+section {
+	padding: 100px 0;
+}
+
+.pink-bg {
+	background-color: $pink-bg-color;
+}
+
+.home-section-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.daily-inspiration-see-more-button {
+	margin-top: 60px;
+}

@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<div class="first-post-background"></div>
 <div class="container">
-	<img src="/assets/images/lazy.jpg" data-src="{{page.image}}">
+	<h5 class="page-mini-title">Daily Inspiration</h5>
+	<h1 class="page-title">{{page.date | date: "%B %d, %Y" }}</h1>
+	<div class="w-100">
+		{% include motivation/card.html item=site.motivation.first %}
+	</div>
+	<div class="share-bar">
+		<h4>Share this</h4>
+		{% include share-icons.html %}
+	</div>
 </div>

@@ -1,18 +1,7 @@
 @import "variables";
 
 .post-page-container {
-	margin: 0 auto;
-	width: 90%;
-	@media (min-width: $sm) {
-		width: 80%;
-	}
-	@media (min-width: $md) {
-		width: 70%;
-	}
-	@media (min-width: $lg) {
-		width: 65%;
-		max-width: 800px;
-	}
+	@include container-widths;
 }
 
 .post-page-container-above-image {
@@ -91,5 +80,5 @@
 
 .next-n-prev-post-navigation {
 	text-decoration: underline;
-	margin-top: 100px;
+	margin: 30px 0 50px;
 }

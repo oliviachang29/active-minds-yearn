@@ -5,7 +5,7 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-  position: relative;
+  /*position: relative;*/
 	/*background-color: #F9FAFA;*/
 }
 
@@ -20,6 +20,7 @@ main {
 
 * {
   font-family: $paragraph-font,Helvetica Neue,Helvetica,Arial,sans-serif;
+  @include smooth-transition;
 }
 
 .transition-fade {
@@ -38,6 +39,14 @@ html.is-animating .transition-fade{
 
 hr {
   color: $super-light-gray;
+}
+
+.button-center-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .button {
@@ -64,8 +73,22 @@ hr {
 
 .default-page-container {
   padding-top: 30px;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
   @media (min-width: $md) {
     padding-top: 70px;
   }
+}
+
+.pink-box-shadow-left {
+  @include pink-box-shadow-left;
+}
+
+.pink-box-shadow-right {
+  @include pink-box-shadow-right;
+}
+
+.share-button {
+  font-size: 24px;
+  padding: 10px;
+  color: $vivid-pink !important;
 }

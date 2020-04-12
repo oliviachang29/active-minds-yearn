@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container">
-	<h1 class="page-mini-title">Posts tagged "{{ page.tag }}"</h1>
+	<h1 class="page-title">Posts tagged "{{ page.tag }}"</h1>
 	<div class="d-flex flex-column align-items-center">
 		{% for post in site.tags[page.tag] %}
 			{% include blog_post/card.html post=post %}

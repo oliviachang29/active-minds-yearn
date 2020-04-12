@@ -44,6 +44,7 @@ h5, h6 {
 	font-family: $link-font;
 	text-transform: uppercase;
 	letter-spacing: 1.32px;
+	font-size: 13px;
 }
 
 a {
@@ -60,8 +61,14 @@ p, li {
 	color: $light-gray-text;
 }
 
+.page-title {
+	font-family: $title-font;
+	font-size: 40px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
 .page-mini-title {
-	font-family: $paragraph-font;
-	font-size: 30px;
-	margin-bottom: 30px;
+	text-align: center;
+	margin-bottom: 15px;
 }

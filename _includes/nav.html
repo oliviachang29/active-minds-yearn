@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">{{site.title}}</a>
+  <a class="navbar-brand" href="/">
+    <img id="navbar-logo" class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/logo-circle.png">
+    {{site.title}}
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -15,7 +18,9 @@
     <ul class="navbar-nav ml-auto">
       {% for link in site.data.social_media %}
         <li class="nav-item">
-          {% include social_media_icon_renderer.html link=link %}
+          <a href="{{link.url}}" target="_blank">
+            {% include social_media_icon_renderer.html link=link %}
+          </a>
         </li>
       {% endfor %}
     </ul>

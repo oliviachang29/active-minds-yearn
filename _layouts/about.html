@@ -1,12 +1,13 @@
 ---
-layout: static
+layout: default
 ---
-
-<div class="row align-items-center">
-	<div class="col-md-4 offset-md-1">
-		<img src="/assets/images/lazy.jpg" data-src="{{page.personal_image}}" class="lazy">
+<div class="first-post-background"></div>
+<div class="container">
+	<h1 class="page-title">{{page.title}}</h1>
+	<div class="w-100">
+		<img src="/assets/images/lazy.jpg" data-src="{{page.personal_image}}" class="lazy w-100 pink-box-shadow-left">
 	</div>
-	<div class="col-md-6 about-content">
+	<div class="about-content">
 		{{content}}
 	</div>
 </div>

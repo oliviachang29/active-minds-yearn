@@ -14,7 +14,9 @@ $super-light-gray: #EAEAEA;
 $light-gray: #979797;
 $light-gray-text: #666666;
 $dark-gray-text: #2E2E2E;
-$pink: #F4D5E2;
+$light-pink: #F4D5E2;
+$vivid-pink: #D90091;
+$pink-bg-color: #F9E8EF;
 
 /* HEIGHTS */
 $navbar-height: 60px;
@@ -41,9 +43,24 @@ $navbar-height: 60px;
 $post-container-border: 1px solid #4A4A4A;
 @mixin pink-box-shadow-left {
 	border: $post-container-border;
-	box-shadow: -10px 10px 0 0 $pink, -10px 10px 0 1px #4A4A4A;
+	box-shadow: -10px 10px 0 0 $light-pink, -10px 10px 0 1px #4A4A4A;
 }
 @mixin pink-box-shadow-right {
 	border: $post-container-border;
-	box-shadow: 10px 10px 0 0 $pink, 10px 10px 0 1px #4A4A4A !important;
+	box-shadow: 10px 10px 0 0 $light-pink, 10px 10px 0 1px #4A4A4A !important;
+}
+
+@mixin container-widths {
+  margin: 0 auto;
+  width: 90%;
+  @media (min-width: $sm) {
+    width: 80%;
+  }
+  @media (min-width: $md) {
+    width: 70%;
+  }
+  @media (min-width: $lg) {
+    width: 65%;
+    max-width: 800px;
+  }
 }

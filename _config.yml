@@ -12,6 +12,10 @@ exclude:
   - Gemfile.lock
 sass:
   style: compressed
+tag_page_layout: tag
+tag_page_dir: tag
+plugins:
+- jekyll-menus
 collections:
   posts:
     title: Post
@@ -26,7 +30,16 @@ collections:
   uploads:
     title: Uploads
     output: false
-tag_page_layout: tag
-tag_page_dir: tag
-plugins:
-- jekyll-menus
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "motivation"
+    values:
+      layout: "motivation_item"

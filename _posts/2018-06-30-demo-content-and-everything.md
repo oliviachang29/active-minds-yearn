@@ -1,5 +1,4 @@
 ---
-layout: post_2
 title: 'Demo Content and Everything'
 date: 2018-06-30 00:00:00
 subheading: Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.

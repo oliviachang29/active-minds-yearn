@@ -1,5 +1,5 @@
 {% if include.link.url and include.link.url != "" and include.link.url != nil %}
-	<a class="contact-icon" target="_blank" href="{{include.link.url}}">
+	<span class="contact-icon">
 	    <i class="
 	        {% case include.link.type %}
 					  {% when 'Twitter' %}
@@ -22,5 +22,5 @@
 					    fab fa-discord
 				{% endcase %}
 			"></i>
-	</a>
+	</span>
 {% endif %}
