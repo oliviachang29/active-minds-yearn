@@ -1,26 +1,24 @@
 <!-- footer is absolutely positioned -->
 <footer>
 	<div class="footer-content d-flex">
-		<div class="d-flex flex-row justify-content-center">
-			<div id="footer-logo">
-				<img src="/assets/images/lazy.jpg" data-src="/assets/images/logo-circle.png" class="lazy">
-			</div>
-			<ul class="footer-links footer-nav-links">
-				{% for item in site.menus.header %}
-					<li><a href="{{item.url}}"><span>{{item.title}}</span></a></li>
-				{% endfor %}
-			</ul>
-			<ul class="footer-links footer-social-media">
-				{% for link in site.data.social_media %}
-					<li>
-						<a href="{{link.url}}" target="_blank">
-							<span>{% include social_media_icon_renderer.html link=link %}</span>
-							<span>{{link.type}}</span>
-						</a>
-					</li>
-				{% endfor %}
-			</ul>
+		<div id="footer-logo">
+			<img src="/assets/images/lazy.jpg" data-src="/assets/images/logo-circle.png" class="lazy">
 		</div>
+		<ul class="footer-links footer-nav-links">
+			{% for item in site.menus.header %}
+				<li><a href="{{item.url}}"><span>{{item.title}}</span></a></li>
+			{% endfor %}
+		</ul>
+		<ul class="footer-links footer-social-media">
+			{% for link in site.data.social_media %}
+				<li>
+					<a href="{{link.url}}" target="_blank">
+						<span>{% include social_media_icon_renderer.html link=link %}</span>
+						<span>{{link.type}}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
 	</div>
 	<p id="copyright" class="mono">&#xa9; <script>document.write(new Date().getFullYear())</script> {{site.title}}. All rights reserved. Site by <a href="https://oliviachang.me">Olivia Chang</a>.</p>
 </footer>

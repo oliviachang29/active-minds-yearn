@@ -67,9 +67,9 @@ title: Home
 
 	<section id="blog">
 		<div class="container">
-			<h1 class="home-section-title">Latest Blog Post</h1>
+			<h1 class="home-section-title">From The Blog</h1>
 			{% include blog_post/card.html post=site.posts.first %}
-			<div class="button-center-container">
+			<div class="button-center-container home-see-more-button">
 				<a href="/blog" class="button">See More Posts</a>
 			</div>
 		</div>
@@ -78,14 +78,16 @@ title: Home
 	<section id="inspiration" class="pink-bg">
 		<div class="container">
 			<h1 class="home-section-title">Daily Inspiration</h1>
-			{% include motivation/card.html
-				quote=site.motivation.first.quote
-				author=site.motivation.first.author
-				image=site.motivation.first.image
-				url=site.motivation.first.url
-				image_scale="true"
-			%}
-			<div class="button-center-container daily-inspiration-see-more-button">
+			<a href="{{include.url}}">
+				{% include motivation/card.html
+					quote=site.motivation.last.quote
+					author=site.motivation.last.author
+					image=site.motivation.last.image
+					url=site.motivation.last.url
+					image_scale="true"
+				%}
+			</a>
+			<div class="button-center-container home-see-more-button">
 				<a href="/inspiration" class="button">See More</a>
 			</div>
 		</div>

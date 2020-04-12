@@ -7,7 +7,7 @@
           <a class="page-link" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{trail.num}}</a>
         </li>
       {% endfor %}
-      <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}"><a class="page-link" href="{{ paginator.next_page_path }}">Next</a></li>
+      <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}"><a class="page-link paginator-next" href="{{ paginator.next_page_path }}">Next</a></li>
     </ul>
   </nav>
 {% endif %}

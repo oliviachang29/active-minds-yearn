@@ -5,12 +5,15 @@ layout: default
 <div class="container">
 	<h5 class="page-mini-title">Daily Inspiration</h5>
 	<h1 class="page-title">{{page.date | date: "%B %d, %Y" }}</h1>
-	<div class="w-100">
+	<div class="w-100 motivation-1">
 		{% include motivation/card.html quote=page.quote author=page.author image=page.image url=page.url %}
 	</div>
 	<div class="share-bar">
 		<h4>Share this</h4>
 		{% include share-icons.html %}
+	</div>
+	<div class="container-widths">
+		{% include blog_post/disqus.html %}
 	</div>
 </div>
 

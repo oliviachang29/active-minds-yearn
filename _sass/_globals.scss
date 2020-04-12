@@ -105,3 +105,26 @@ hr {
     min-height: 600px;
   }
 }
+
+/* Pagination */
+
+.pagination-nav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.page-item.active .page-link {
+  background-color: $vivid-pink;
+  border-color: $vivid-pink;
+}
+
+.page-link {
+  color: $vivid-pink;
+  &:hover {
+    color: $vivid-pink;
+  }
+}
+
+.container-widths {
+  @include container-widths;
+}

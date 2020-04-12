@@ -26,7 +26,7 @@ collections:
     title: Motivation
     layout: motivation_item
     output: true
-    permalink: /motivation/:year-:month-:day:output_ext
+    permalink: /inspiration/:year-:month-:day:output_ext
   uploads:
     title: Uploads
     output: false
@@ -47,7 +47,6 @@ pagination:
   enabled: true
   sort_reverse: true
   per_page: 3
-  indexpage: 'blog'
   permalink: /:num/
   trail: 
     before: 2 # The number of links before the current page

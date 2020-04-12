@@ -10,4 +10,7 @@
 		{% include footer.html %}
 	</body>
 	{% include scripts.html %}
+	{% if page.js_file %}
+		<script src="{{page.js_file}}"></script>
+	{% endif %}
 </html>

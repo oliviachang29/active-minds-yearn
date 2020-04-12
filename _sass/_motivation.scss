@@ -1,16 +1,5 @@
 @import "variables";
 
-.col-md-12 {
-
-}
-
-.grid-item {
-	width: calc(33% - 2*20px);
-	height: auto;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
 .motivation-card {
 	text-align: center;
 	margin: 0 15px 30px;
@@ -18,7 +7,6 @@
 	height: 70vh;
 	max-height: 1000px;
 	position: relative;
-	padding: 0;
 	background-color: $dark-gray-text;
 	overflow: hidden;
 	img {
@@ -41,22 +29,37 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	padding: 0 30px;
+	width: 100%;
+	@media (min-width: $lg) {
+		padding: 0 50px;
+		width: 90%;
+	}
+}
+
+.inspiration-row {
+	margin-right: 0;
 }
 
 .inspiration-quote {
 	font-family: $paragraph-font;
 	color: white;
-	font-size: 32px;
-	line-height: 50px;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.motivation-1 {
+	padding: 0 15px;
 }
 
 .motivation-1 .inspiration-quote {
-	
+	@media (min-width: $lg) {
+		font-size: 32px;
+		line-height: 50px;
+	}
 }
 
 .motivation-2 .inspiration-quote {
-	font-size: 25px;
-	line-height: 40px;
 }
 
 .inspiration-author {

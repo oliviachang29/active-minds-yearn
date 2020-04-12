@@ -53,7 +53,6 @@ span {
 .post-card-container {
 	width: 100%;
 	min-height: 400px;
-	margin-bottom: 80px;
 	flex-direction: column;
 	/*justify-content: center;*/
 	@media (min-width: $md) {
@@ -63,6 +62,10 @@ span {
 	@media (min-width: $lg) {
 		max-height: 500px;
 	}
+}
+
+.blog-post-card-container {
+	margin-top: 80px;
 }
 
 /* FIRST POST */
@@ -167,5 +170,5 @@ span {
 }
 
 .first-post-content {
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 }
