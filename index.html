@@ -1,20 +1,35 @@
 ---
 layout: master
 title: Home
+js_file: "/assets/js/index.js"
+carousel:
+- image: "/uploads/motivation/1.jpg"
+  title: Nullam id dolor id nibh ultricies vehicula ut id elit
+  mini_title: Featured on the blog
+  description: Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.
+  url: "/blog"
+- image: "/uploads/motivation/2.jpg"
+  title: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus
+  mini_title: Vestibulum Vehicula Dolor Mattis
+  description: Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis.
+  url: "/blog"
+- image: "/uploads/motivation/3.jpg"
+  title: Cras mattis consectetur purus sit amet fermentum
+  mini_title: Featured on the blog
+  description: Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  url: "/blog"
 ---
 <div class="home">
 	<div id="home-carousel" class="carousel slide" data-ride="carousel">
+
 	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img class="d-block w-100 h-100 lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/1.jpg" alt="First slide">
-	      
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100 h-100 lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/2.jpg" alt="Second slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100 h-100 lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/3.jpg" alt="Third slide">
-	    </div>
+	  	{% for item in page.carousel %}
+	  		{% if forloop.first %}
+	  			{% include carousel_item.html item=item active="true" %}
+	  		{% else %}
+	  			{% include carousel_item.html item=item %}
+	  		{% endif %}
+	  	{% endfor %}
 	  </div>
 	  <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
 	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -28,7 +43,7 @@ title: Home
 
 
 	<section id="about">
-		<div class="container">
+		<div class="container home-container">
 			<div class="row align-items-center">
 				<div class="col-md-6">
 					<div class="home-section-image-container">
@@ -47,7 +62,7 @@ title: Home
 	</section>
 
 	<section id="section-2" class="pink-bg">
-		<div class="container">
+		<div class="container home-container">
 			<div class="row align-items-center">
 				<div class="col-md-6">
 					<div class="home-section-text">
@@ -66,7 +81,7 @@ title: Home
 	</section>
 
 	<section id="blog">
-		<div class="container">
+		<div class="container home-container">
 			<h1 class="home-section-title">From The Blog</h1>
 			{% include blog_post/card.html post=site.posts.first %}
 			<div class="button-center-container home-see-more-button">
@@ -76,14 +91,15 @@ title: Home
 	</section>
 
 	<section id="inspiration" class="pink-bg">
-		<div class="container">
+		<div class="container home-container">
+			{% assign latest_motivation = site.motivation.last %}
 			<h1 class="home-section-title">Daily Inspiration</h1>
-			<a href="{{include.url}}">
+			<a href="{{latest_motivation.url}}" class="home-inspiration">
 				{% include motivation/card.html
-					quote=site.motivation.last.quote
-					author=site.motivation.last.author
-					image=site.motivation.last.image
-					url=site.motivation.last.url
+					quote=latest_motivation.quote
+					author=latest_motivation.author
+					image=latest_motivation.image
+					url=latest_motivation.url
 					image_scale="true"
 				%}
 			</a>

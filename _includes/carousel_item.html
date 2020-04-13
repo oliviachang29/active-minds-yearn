@@ -1,0 +1,17 @@
+<div class="carousel-item {% if include.active %} active {% endif %}">
+  <img class="d-block w-100 h-100 lazy carousel-background-image" src="/assets/images/lazy.jpg" data-src="{{ include.item.image }}" alt="First slide">
+  <div class="carousel-text">
+		{% if include.item.mini_title and include.item.mini_title != "" and include.item.mini_title != nil %}
+			<h5 class="carousel-mini-title">{{include.item.mini_title}}</h5>
+		{% endif %}
+	  {% if include.item.title and include.item.title != "" and include.item.title != nil %}
+	  	<h1 class="carousel-title">{{include.item.title}}</h1>
+	  {% endif %}
+	  {% if include.item.description and include.item.description != "" and include.item.description != nil %}
+	  	<p class="carousel-description">{{include.item.description}}</p>
+	  {% endif %}
+	  {% if include.item.url and include.item.url != "" and include.item.url != nil %}
+	  	<a class="button white-button carousel-button" href="{{include.item.url}}">Read More</a>
+	  {% endif %}
+	</div>
+</div>

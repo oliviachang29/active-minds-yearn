@@ -5,6 +5,9 @@ $content.infiniteScroll({
   path: '/blog/{{#}}/',
   append: '.post-container',
   history: false,
+  // status: '.page-load-status',
+  // button: '.view-more-button',
+  scrollThreshold: false
 });
 
 // try waiting until everything is fully loaded

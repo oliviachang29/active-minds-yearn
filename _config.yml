@@ -46,7 +46,7 @@ defaults:
 pagination:
   enabled: true
   sort_reverse: true
-  per_page: 3
+  per_page: 6
   permalink: /:num/
   trail: 
     before: 2 # The number of links before the current page

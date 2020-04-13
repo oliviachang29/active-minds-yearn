@@ -9,7 +9,7 @@ pagination:
   permalink: "/:num/"
 ---
 {% if paginator.page == 1 %}
-	<div class="first-post-background"></div>
+	<div class="pink-background pink-bg-blog"></div>
 {% endif %}
 {% assign first_post = site.posts.first %}
 
@@ -41,6 +41,5 @@ pagination:
 				{% include blog_post/card.html post=post container_class="blog-post-card-container" %}
 			{% endunless %}
 		{% endfor %}
-
 	</div>
 </div>

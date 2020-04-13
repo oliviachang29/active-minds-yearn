@@ -65,6 +65,14 @@ hr {
   }
 }
 
+.white-button {
+  color: white;
+  border: 1px solid white;
+  &:hover {
+    background-color: #ffffff10;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -92,13 +100,13 @@ hr {
   color: $vivid-pink !important;
 }
 
-.first-post-background {
+.pink-background {
   top: 0;
   position: absolute;
   width: 100%;
   z-index: -10;
   background-color: $pink-bg-color;
-  height: 40vh;
+  height: 100vh;
   min-height: 400px;
   @media (min-width: $md) {
     height: 60vh;

@@ -19,7 +19,6 @@ function unveilImages(selector) {
 function initJS() {
     markCurrentLink()
     unveilImages($('.lazy'))
-
 }
 // executes this stuff before load
 // $(function() {
