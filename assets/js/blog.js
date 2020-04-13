@@ -3,11 +3,11 @@ $content = $('.blog-content')
 $content.infiniteScroll({
   // options
   path: '/blog/{{#}}/',
-  append: '.post-container',
+  append: '.post-card-container',
   history: false,
   // status: '.page-load-status',
   // button: '.view-more-button',
-  scrollThreshold: false
+  // scrollThreshold: false
 });
 
 // try waiting until everything is fully loaded
