@@ -1,4 +1,56 @@
 ---
 label: Carousel
 hide_body: true
-fields: []
+fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: template
+  default: carousel
+  hidden: true
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: carousel_items
+  type: field_group_list
+  fields:
+  - name: mini_title
+    type: text
+    config:
+      required: false
+    label: Mini Title
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: url
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: ''
+        file: 
+        path: 
+    label: URL
+  - name: background_image
+    type: file
+    config:
+      maxSize: 250
+    label: Background Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Carousel Items
