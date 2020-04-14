@@ -2,7 +2,9 @@
 title: 'Copy 2'
 date: 2018-06-30 00:00:00
 subheading: Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-tags: tag1, tag2, tag3
+tags:
+- tag1
+- tag2
 featured_image: '/uploads/1.jpg'
 ---
 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.

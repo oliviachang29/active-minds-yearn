@@ -2,7 +2,9 @@
 title: 'Demo Content and Everything'
 date: 2018-06-30 00:00:00
 subheading: Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
-tags: tag1, tag2, tag3
+tags:
+- tag1
+- tag2
 featured_image: '/uploads/2.jpg'
 ---
 
