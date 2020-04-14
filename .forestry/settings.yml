@@ -11,6 +11,9 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+  templates:
+  - blocks
+  - static
 - type: jekyll-posts
   label: Blog Posts
   create: documents
