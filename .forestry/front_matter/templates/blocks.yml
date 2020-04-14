@@ -24,3 +24,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- _static/index.html
