@@ -19,5 +19,6 @@ fields:
   label: featured_image
 pages:
 - _posts/2018-06-30-demo-content-and-everything.md
+- _posts/2019-03-24-demo_post_2 copy.md
 - _posts/2019-03-24-demo_post_2.md
 - _posts/2020-02-06-demo_post_3 copy.md
