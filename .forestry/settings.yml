@@ -4,23 +4,26 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/general.yml
-  label: Settings
-  match: "**/*"
-- type: directory
-  path: _motivation
-  label: Inspiration
-  create: documents
-  match: "**/*"
+- type: heading
+  label: Pages
 - type: directory
   path: _static
   label: Pages
   create: all
   match: "**/*"
 - type: jekyll-posts
-  label: Posts
+  label: Blog Posts
   create: documents
+- type: directory
+  path: _motivation
+  label: Inspiration
+  create: documents
+- type: heading
+  label: Settings
+- type: document
+  path: _data/general.yml
+  label: Settings
+  match: "**/*"
 - type: document
   path: _data/social_media.yml
   label: Social Media
