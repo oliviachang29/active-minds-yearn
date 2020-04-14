@@ -32,3 +32,5 @@ fields:
     label: type
   config:
     labelField: type
+pages:
+- _data/social_media.yml
