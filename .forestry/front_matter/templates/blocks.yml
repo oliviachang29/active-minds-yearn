@@ -22,6 +22,10 @@ fields:
   label: Page Sections
   template_types:
   - carousel
+  - image-left-text-right
+  - centered-text-with-background-image
+  - recent-blog-post
+  - recent-inspiration
   config:
     min: 
     max: 
