@@ -30,3 +30,5 @@ fields:
         file: 
         path: 
     label: type
+  config:
+    labelField: type
