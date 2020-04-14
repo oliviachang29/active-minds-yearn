@@ -1,11 +1,12 @@
 ---
-title: 'Demo Content and Everything'
-date: 2018-06-30 00:00:00
-subheading: Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+title: Demo Content and Everything
+date: 2018-06-30T00:00:00.000+00:00
+subheading: Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
 tags: tag1 tag2 tag3
-featured_image: '/uploads/2.jpg'
----
+featured_image: "/uploads/2.jpg"
 
+---
 This page is a demo that shows everything you can do inside portfolio and blog posts.
 
 We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
