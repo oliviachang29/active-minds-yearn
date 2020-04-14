@@ -24,11 +24,3 @@ fields:
   config:
     min: 
     max: 
-- name: image-left-text-right
-  type: field_group
-  config: {}
-  label: image-left-text-right
-- name: carousel
-  type: field_group
-  config: {}
-  label: Carousel
