@@ -20,9 +20,9 @@
 	  						{% if include.type == 'carousel' %}carousel-text {% endif %}
 	  						">{{include.block.text}}</p>
 	  {% endif %}
-	  {% if include.block.url and include.block.url != "" and include.block.url != nil %}
+	  {% if include.block.button.link and include.block.button.link != "" and include.block.button.link != nil %}
 	  	<div class="centered-text-w-bg-image-button-container">
-	  		<a class="button white-button centered-text-w-bg-image-button" href="{{include.block.url}}">Read More</a>
+	  		<a class="button white-button centered-text-w-bg-image-button" href="{{include.block.button.link}}">{{include.block.button.text}}</a>
 	  	</div>
 	  {% endif %}
 	</div>
