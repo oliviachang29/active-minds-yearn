@@ -21,6 +21,8 @@ fields:
   name: author
   label: author
 pages:
+- _motivation/march-11-2020.md
+- _motivation/march-12-2020.md
 - _motivation/march-2-2020.md
 - _motivation/march-3-2020.md
 - _motivation/march-4-2020.md
