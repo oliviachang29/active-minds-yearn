@@ -1,0 +1,33 @@
+<div {% if include.block.id %} id="{{include.block.id}}" {% endif %}
+	class="centered-text-w-bg-image-item
+			{% if include.type == 'carousel' %}carousel-item {% endif %}
+			{% if include.active %} active {% endif %}"
+	{% if include.background_color %}
+		style="background-color: {{include.background_color}}"
+	{% endif %}>
+  <img class="d-block w-100 h-100 lazy centered-text-w-bg-image-background-image" src="{{ include.block.background_image }}" alt="First slide">
+  <div class="centered-text-w-bg-image-text-container">
+		{% if include.block.mini_title and include.block.mini_title != "" and include.block.mini_title != nil %}
+			<h5 class="centered-text-w-bg-image-mini-title">{{include.block.mini_title}}</h5>
+		{% endif %}
+	  {% if include.block.title and include.block.title != "" and include.block.title != nil %}
+	  	<h1 class="centered-text-w-bg-image-title
+	  						{% if include.type == 'carousel' %}carousel-title {% endif %}
+	  						">{{include.block.title}}</h1>
+	  {% endif %}
+	  {% if include.block.text and include.block.text != "" and include.block.text != nil %}
+	  	<p class="centered-text-w-bg-image-text
+	  						{% if include.type == 'carousel' %}carousel-text {% endif %}
+	  						">{{include.block.text}}</p>
+	  {% endif %}
+	  {% if include.block.url and include.block.url != "" and include.block.url != nil %}
+	  	<div class="centered-text-w-bg-image-button-container">
+	  		<a class="button white-button centered-text-w-bg-image-button" href="{{include.block.url}}">Read More</a>
+	  	</div>
+	  {% endif %}
+	</div>
+</div>
+
+{% if include.block.id %}
+	</section>
+{% endif %}

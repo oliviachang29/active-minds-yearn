@@ -1,0 +1,9 @@
+<section id="{{include.block.id}}" class="{% if include.block.background_color == 'pink' %}pink-bg {% endif %}">
+	<div class="container home-container">
+		<h1 class="home-section-title">From The Blog</h1>
+		{% include blog_post/card.html post=site.posts.first %}
+		<div class="button-center-container home-see-more-button">
+			<a href="/blog" class="button">See More Posts</a>
+		</div>
+	</div>
+</section>

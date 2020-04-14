@@ -1,4 +1,3 @@
 $('#home-carousel').on('slid.bs.carousel', function () {
-  unveilImages($('.carousel-background-image'))
-  console.log('yo')
+	$('.centered-text-w-bg-image-background-image').trigger('unveil');
 })

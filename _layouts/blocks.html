@@ -1,0 +1,20 @@
+---
+layout: master
+---
+{% for block in page.page_sections %}
+    {% assign template = block.template %}
+    {% case template %}
+	    {% when 'carousel' %}
+	        {% include blocks/carousel.html block=block %}
+	    {% when 'image-left-text-right' %}
+	        {% include blocks/image-left-text-right.html block=block %}
+	    {% when 'image-right-text-left' %}
+	        {% include blocks/image-right-text-left.html block=block %}
+	    {% when 'centered-text-w-bg-image' %}
+	        {% include blocks/centered-text-w-bg-image.html block=block %}
+	    {% when 'recent-blog-post' %}
+	        {% include blocks/recent-blog-post.html block=block %}
+	    {% when 'recent-inspiration' %}
+	        {% include blocks/recent-inspiration.html block=block %}
+    {% endcase %}
+{% endfor %}

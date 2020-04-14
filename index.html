@@ -1,111 +1,44 @@
 ---
-layout: master
+layout: blocks
 title: Home
 js_file: "/assets/js/index.js"
-carousel:
-- image: "/uploads/motivation/1.jpg"
-  title: Nullam id dolor id nibh ultricies vehicula ut id elit
-  mini_title: Featured on the blog
-  description: Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.
-  url: "/blog"
-- image: "/uploads/motivation/2.jpg"
-  title: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus
-  mini_title: Vestibulum Vehicula Dolor Mattis
-  description: Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis.
-  url: "/blog"
-- image: "/uploads/motivation/3.jpg"
-  title: Cras mattis consectetur purus sit amet fermentum
-  mini_title: Featured on the blog
-  description: Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  url: "/blog"
+page_sections:
+    -
+        template: carousel
+        id: "home-carousel"
+        carousel_items:
+            - {background_image: /uploads/1.jpg, title: 'Nullam id dolor id nibh ultricies vehicula ut id elit', mini_title: 'Featured on the blog', text: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.', url: /blog}
+            - {background_image: /uploads/2.jpg, title: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus', mini_title: 'Vestibulum Vehicula Dolor Mattis', text: 'Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis.', url: /blog}
+            - {background_image: /uploads/3.jpg, title: 'Cras mattis consectetur purus sit amet fermentum', mini_title: 'Featured on the blog', text: 'Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', url: /blog}
+    -
+        template: image-left-text-right
+        id: about
+        background_color: white
+        image: /uploads/about_me.jpeg
+        title: "Hi, I'm Aminata"
+        text: "Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor."
+        button:
+            text: 'About Me'
+            link: /about
+    -
+        template: image-right-text-left
+        id: section_2
+        background_color: pink
+        image: /uploads/demo-landscape.jpg
+        title: "Section 2"
+        text: "Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor."
+    -
+        template: recent-blog-post
+        id: blog
+        background_color: white
+    -
+        template: recent-inspiration
+        id: inspiration
+        background_color: pink
+    -
+        template: centered-text-w-bg-image
+        id: cta
+        background_image: /uploads/demo-landscape.jpg
+        title: "Section 2"
+        text: "Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor."
 ---
-<div class="home">
-	<div id="home-carousel" class="carousel slide" data-ride="carousel">
-
-	  <div class="carousel-inner">
-	  	{% for item in page.carousel %}
-	  		{% if forloop.first %}
-	  			{% include carousel_item.html item=item active="true" %}
-	  		{% else %}
-	  			{% include carousel_item.html item=item %}
-	  		{% endif %}
-	  	{% endfor %}
-	  </div>
-	  <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
-
-
-	<section id="about">
-		<div class="container home-container">
-			<div class="row align-items-center">
-				<div class="col-md-6">
-					<div class="home-section-image-container">
-						<img src="/assets/images/lazy.jpg" data-src="/uploads/about_me.jpeg" class="lazy pink-box-shadow-left">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="home-section-text">
-						<h2>Hi, I'm Aminata</h2>
-						<p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p>
-						<a class="button button-large-padding" href="/about">About Me</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="section-2" class="pink-bg">
-		<div class="container home-container">
-			<div class="row align-items-center">
-				<div class="col-md-6">
-					<div class="home-section-text">
-						<h2>Section 2</h2>
-						<p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p>
-						<!-- <a class="button home-button" href="/about">Learn More</a> -->
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="home-section-image-container">
-						<img src="/assets/images/lazy.jpg" data-src="/assets/images/demo-landscape.jpg" class="lazy pink-box-shadow-right">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="blog">
-		<div class="container home-container">
-			<h1 class="home-section-title">From The Blog</h1>
-			{% include blog_post/card.html post=site.posts.first %}
-			<div class="button-center-container home-see-more-button">
-				<a href="/blog" class="button">See More Posts</a>
-			</div>
-		</div>
-	</section>
-
-	<section id="inspiration" class="pink-bg">
-		<div class="container home-container">
-			{% assign latest_motivation = site.motivation.last %}
-			<h1 class="home-section-title">Daily Inspiration</h1>
-			<a href="{{latest_motivation.url}}" class="home-inspiration">
-				{% include motivation/card.html
-					quote=latest_motivation.quote
-					author=latest_motivation.author
-					image=latest_motivation.image
-					url=latest_motivation.url
-					image_scale="true"
-				%}
-			</a>
-			<div class="button-center-container home-see-more-button">
-				<a href="/inspiration" class="button">See More</a>
-			</div>
-		</div>
-	</section>
-</div>

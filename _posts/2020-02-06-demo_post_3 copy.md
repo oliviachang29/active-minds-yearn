@@ -3,7 +3,7 @@ title: "Copy 1"
 subheading: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
 date: "February 24, 2020"
 tags: tag3 tag2
-featured_image: "/assets/images/4.jpg"
+featured_image: "/uploads/4.jpg"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper.
 

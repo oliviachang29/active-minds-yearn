@@ -3,7 +3,7 @@ title: 'Demo Content and Everything'
 date: 2018-06-30 00:00:00
 subheading: Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
 tags: tag1 tag2 tag3
-featured_image: '/assets/images/2.jpg'
+featured_image: '/uploads/2.jpg'
 ---
 
 This page is a demo that shows everything you can do inside portfolio and blog posts.
@@ -34,10 +34,10 @@ You can throw in some horizontal rules too:
 
 ### Images
 
-<img src="/assets/images/demo-portrait.jpg">
-<img src="/assets/images/demo-landscape.jpg">
-<img src="/assets/images/demo-square.jpg">
-<img src="/assets/images/demo-landscape-2.jpg">
+<img src="/uploads/demo-portrait.jpg">
+<img src="/uploads/demo-landscape.jpg">
+<img src="/uploads/demo-square.jpg">
+<img src="/uploads/demo-landscape-2.jpg">
 
 ---
 

@@ -1,3 +1,6 @@
+logo:
+  navigation: "/uploads/logo.png"
+  footer: "/uploads/logo@2x.png"
 newsletter:
   title: "Subscribe to my newsletter"
   description: "Get the latest blog posts and updates. (I promise not to spam!)"

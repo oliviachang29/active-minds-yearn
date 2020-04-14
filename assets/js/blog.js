@@ -10,7 +10,6 @@ $content.infiniteScroll({
   // scrollThreshold: false
 });
 
-// try waiting until everything is fully loaded
 $content.on( 'append.infiniteScroll', function( event, response ) {
-  unveilImages($('.post-card-image'))
+	$('.post-card-image').trigger('unveil');
 })

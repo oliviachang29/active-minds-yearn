@@ -1,7 +1,8 @@
 ---
 layout: default
+js_file: '/assets/js/motivation_item.js'
+pink_background: true
 ---
-<div class="pink-background"></div>
 <div class="container">
 	<h5 class="page-mini-title">Daily Inspiration</h5>
 	<h1 class="page-title">{{page.date | date: "%B %d, %Y" }}</h1>
@@ -16,7 +17,3 @@ layout: default
 		{% include blog_post/disqus.html %}
 	</div>
 </div>
-
-<script>
-	$('img').unveil();
-</script>

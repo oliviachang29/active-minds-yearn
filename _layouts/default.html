@@ -1,6 +1,9 @@
 ---
 layout: master
 ---
+{% if page.pink_background %}
+	<div class="pink-background {{page.pink_background_class}}"></div>
+{% endif %}
 <div class="default-page-container">
 	{{ content }}
 </div>
