@@ -27,6 +27,7 @@ fields:
     time_format: 
     display_utc: false
 pages:
+- _motivation/march-1-2020.md
 - _motivation/march-10-2020.md
 - _motivation/march-11-2020.md
 - _motivation/march-12-2020.md
