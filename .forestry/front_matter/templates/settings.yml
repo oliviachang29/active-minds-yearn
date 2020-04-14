@@ -1,0 +1,24 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: field_group
+  name: logo
+  label: logo
+  fields:
+  - type: file
+    name: navigation
+    label: navigation
+  - type: file
+    name: footer
+    label: footer
+- type: field_group
+  name: newsletter
+  label: newsletter
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
