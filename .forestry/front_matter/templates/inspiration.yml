@@ -1,0 +1,19 @@
+---
+label: Inspiration
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: image
+  label: image
+- type: text
+  name: date
+  label: date
+- type: textarea
+  name: quote
+  label: quote
+- type: text
+  name: author
+  label: author
