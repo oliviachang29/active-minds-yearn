@@ -1,4 +1,30 @@
 ---
 label: Recent Blog Post
 hide_body: false
-fields: []
+fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: template
+  default: recent-blog-post
+  hidden: true
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: background_color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - white
+    - pink
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: background_color
