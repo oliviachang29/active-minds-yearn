@@ -20,7 +20,8 @@ fields:
 - name: page_sections
   type: blocks
   label: Page Sections
-  template_types: []
+  template_types:
+  - carousel
   config:
     min: 
     max: 
