@@ -1,4 +1,25 @@
 ---
 label: Button
 hide_body: true
-fields: []
+fields:
+- name: show_button
+  type: boolean
+  label: Show Button
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  label: Button
+  showOnly:
+    field: show_button
+    value: true
