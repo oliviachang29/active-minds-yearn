@@ -1,0 +1,14 @@
+---
+label: Social Media
+hide_body: true
+fields:
+- type: field_group_list
+  name: Social media
+  label: Social media
+  fields:
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: url
+    label: url
