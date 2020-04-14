@@ -2,21 +2,22 @@
 label: Blog Post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
-- type: datetime
-  name: date
-  label: date
-- type: text
-  name: subheading
-  label: subheading
-- type: text
-  name: tags
-  label: tags
 - type: file
   name: featured_image
   label: featured_image
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subheading
+  label: subheading
+- type: datetime
+  name: date
+  label: date
+- name: tag
+  type: tag_list
+  default: []
+  label: tags
 pages:
 - _posts/2018-06-30-demo-content-and-everything.md
 - _posts/2019-03-24-demo_post_2 copy.md
