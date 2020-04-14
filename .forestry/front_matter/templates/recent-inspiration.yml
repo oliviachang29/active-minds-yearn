@@ -1,4 +1,31 @@
 ---
 label: Recent Inspiration
 hide_body: true
-fields: []
+fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: template
+  default: recent-inspiration
+  hidden: true
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+  default: inspiration
+- name: background_color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - white
+    - pink
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: background_color
