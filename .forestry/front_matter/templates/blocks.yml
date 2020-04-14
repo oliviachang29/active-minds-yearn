@@ -1,0 +1,45 @@
+---
+label: Blocks
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: js_file
+  label: js_file
+- type: field_group_list
+  name: page_sections
+  label: page_sections
+  fields:
+  - type: text
+    name: template
+    label: template
+  - type: text
+    name: id
+    label: id
+  - type: field_group_list
+    name: carousel_items
+    label: carousel_items
+    fields:
+    - type: file
+      name: background_image
+      label: background_image
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: mini_title
+      label: mini_title
+    - type: textarea
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url

@@ -18,12 +18,12 @@ sections:
   path: _motivation
   label: Inspiration
   create: documents
+  match: "**/*"
 - type: heading
   label: Settings
 - type: document
   path: _data/general.yml
   label: Settings
-  match: "**/*"
 - type: document
   path: _data/social_media.yml
   label: Social Media
