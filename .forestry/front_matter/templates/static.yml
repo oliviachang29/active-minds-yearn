@@ -1,0 +1,19 @@
+---
+label: Static
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: file
+  name: featured_image
+  label: featured_image
+- type: boolean
+  name: pink_background
+  label: pink_background
