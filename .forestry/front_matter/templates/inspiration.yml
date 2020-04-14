@@ -1,10 +1,13 @@
 ---
 label: Inspiration
 hide_body: true
+display_field: quote
 fields:
 - type: text
   name: layout
   label: layout
+  default: motivation_item
+  hidden: true
 - type: file
   name: image
   label: image
