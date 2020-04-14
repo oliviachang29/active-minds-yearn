@@ -7,8 +7,26 @@ fields:
   label: Social media
   fields:
   - type: text
-    name: type
-    label: type
-  - type: text
     name: url
     label: url
+  - name: type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Twitter
+      - Facebook
+      - Email
+      - Instagram
+      - Linkedin
+      - Github
+      - Youtube
+      - Snapchat
+      - Discord
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: type
