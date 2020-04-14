@@ -1,4 +1,71 @@
 ---
 label: Image Left, Text Right
 hide_body: false
-fields: []
+fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: template
+  default: image-left-text-right
+  hidden: true
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+- name: background_color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - white
+    - pink
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: background_color
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: image
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: text
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: text
+  - name: link
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: 
+        file: 
+        path: 
+    label: link
+  label: button
