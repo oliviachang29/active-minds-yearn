@@ -12,10 +12,17 @@ fields:
       required: false
     label: Text
   - name: link
-    type: text
+    type: select
+    default: []
     config:
       required: false
-    label: Link
+      options: []
+      source:
+        type: pages
+        section: 
+        file: 
+        path: 
+    label: link
   label: Button
   showOnly:
     value: true
