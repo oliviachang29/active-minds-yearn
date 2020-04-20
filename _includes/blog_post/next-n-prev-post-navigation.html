@@ -1,0 +1,17 @@
+{% if page.previous.url or page.next.url %}
+	<div class="row next-n-prev-post-navigation">
+		<div class="col text-left">
+			<!-- ex: << Next Post -->
+			{% if page.previous.url %}
+				<a href="{{page.previous.url}}">« {{page.previous.title}}</a>
+			{% endif %}
+		</div>
+
+		<div class="col text-right">
+			<!-- ex: Next Post >> -->
+			{% if page.next.url %}
+				<a href="{{page.next.url}}">{{page.next.title}} »</a>
+			{% endif %}
+		</div>
+	</div>
+{% endif %}

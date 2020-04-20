@@ -40,7 +40,16 @@ function unveilImages(selector) {
 
 function initJS() {
     markCurrentLink()
-    unveilImages($('.lazy'))
+    unveilImages($('img'))
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '25454876917', // for activemindsyearn
+        // get: 'tagged',
+        // tagName: 'awesome',
+        accessToken: InstagramToken,
+        debug: true
+    });
+    feed.run();
 }
 // executes this stuff before load
 // $(function() {

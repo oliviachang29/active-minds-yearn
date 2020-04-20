@@ -1,10 +1,6 @@
 @import "variables";
 
-.pink-bg-blog {
-	@media (max-width: $md) {
-		display: none;
-	}
-}
+/* General Styles */
 
 .post-title {
 	letter-spacing: 0;
@@ -17,13 +13,6 @@
 	color: $light-gray-text;
 	letter-spacing: 0;
 	line-height: 25px;
-}
-
-span {
-	font-family: $link-font;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 1.32px;
 }
 
 .post-card-date-n-tags {
@@ -39,7 +28,27 @@ span {
 	margin-right: 5px;
 }
 
-/* DEFAULT CARD */
+/* Styles for specific pages */
+
+.pink-bg-blog {
+	@media (max-width: $md) {
+		height: 500px;
+	}
+}
+
+.blog-content {
+	padding: 0 30px;
+}
+
+.blog-post-card-container {
+	margin-top: 80px;
+}
+
+.tag-post-card-container {
+	margin-bottom: 80px;
+}
+
+/* Card Styles */
 
 .post-card-container {
 	background-color: white;
@@ -61,36 +70,6 @@ span {
 	/* don't add a max-height until the viewport is wide enough that stuff won't be squished*/
 	@media (min-width: $lg) {
 		max-height: 500px;
-	}
-}
-
-.blog-post-card-container {
-	margin-top: 80px;
-}
-
-/* FIRST POST */
-
-.post-card-first-post-container {
-	min-height: 70vh;
-	max-height: none;
-	@media (min-width: $md) {
-		flex-direction: row-reverse !important;
-	}
-	.post-card-image-container {
-		@media (min-width: $md) {
-			width: 50%;
-		}
-		@media (min-width: $lg) {
-			width: 60%;
-		}
-	}
-	.post-card-metadata {
-		@media (min-width: $md) {
-			width: 50%;
-		}
-		@media (min-width: $lg) {
-			width: 40%;
-		}
 	}
 }
 
@@ -141,41 +120,4 @@ span {
 	@media (max-width: $md) {
 	    margin: 20px auto 0;
 	  }
-}
-
-.first-post-title {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.first-post-subheading {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.first-post-image-container {
-	margin: 40px 0 50px;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	background-color: white;
-	@include pink-box-shadow-left;
-}
-
-.first-post-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.first-post-date-n-tags {
-	justify-content: center;
-}
-
-.first-post-content {
-	/*margin-bottom: 100px;*/
-}
-
-.blog-content {
-	padding: 0 30px;
 }

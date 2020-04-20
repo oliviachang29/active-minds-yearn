@@ -1,11 +1,13 @@
 ---
 layout: default
+pink_background: true
 ---
 <div class="container">
+	<h5 class="page-mini-title">Blog</h5>
 	<h1 class="page-title">Posts tagged "{{ page.tag }}"</h1>
-	<div class="d-flex flex-column align-items-center">
+	<div class="w-100 d-flex flex-column align-items-center">
 		{% for post in site.tags[page.tag] %}
-			{% include blog_post/card.html post=post %}
+			{% include blog_post/card.html post=post container_class="tag-post-card-container" %}
 		{% endfor %}
 	</div>
 </div>

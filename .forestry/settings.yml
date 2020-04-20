@@ -18,7 +18,7 @@ sections:
   label: Blog Posts
   create: documents
 - type: directory
-  path: _motivation
+  path: _inspiration
   label: Inspiration
   create: documents
   match: "**/*"

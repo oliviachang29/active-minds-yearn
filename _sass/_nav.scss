@@ -10,6 +10,15 @@
 	border-bottom: 1px solid $super-light-gray;
 }
 
+/* Mobile Toggler*/
+
+.navbar-toggler {
+	border: none;
+}
+
+
+/* Navbar Content */
+
 .navbar-brand {
 	font-family: $title-font;
 	color: $vivid-pink !important;

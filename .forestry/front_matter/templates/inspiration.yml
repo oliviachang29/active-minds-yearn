@@ -6,7 +6,7 @@ fields:
 - type: text
   name: layout
   label: layout
-  default: motivation_item
+  default: inspiration_item
   hidden: true
 - type: file
   name: image
@@ -27,10 +27,10 @@ fields:
     time_format: 
     display_utc: false
 pages:
-- _motivation/march-1-2020.md
-- _motivation/march-10-2020.md
-- _motivation/march-11-2020.md
-- _motivation/march-12-2020.md
-- _motivation/march-2-2020.md
-- _motivation/march-3-2020.md
-- _motivation/march-4-2020.md
+- _inspiration/march-1-2020.md
+- _inspiration/march-10-2020.md
+- _inspiration/march-11-2020.md
+- _inspiration/march-12-2020.md
+- _inspiration/march-2-2020.md
+- _inspiration/march-3-2020.md
+- _inspiration/march-4-2020.md

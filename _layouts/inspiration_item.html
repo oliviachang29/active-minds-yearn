@@ -1,13 +1,13 @@
 ---
 layout: default
-js_file: '/assets/js/motivation_item.js'
+js_file: '/assets/js/inspiration_item.js'
 pink_background: true
 ---
 <div class="container">
 	<h5 class="page-mini-title">Daily Inspiration</h5>
 	<h1 class="page-title">{{page.date | date: "%B %d, %Y" }}</h1>
-	<div class="w-100 motivation-1">
-		{% include motivation/card.html quote=page.quote author=page.author image=page.image url=page.url %}
+	<div class="w-100 inspiration-1">
+		{% include inspiration/card.html quote=page.quote author=page.author image=page.image url=page.url %}
 	</div>
 	<div class="share-bar">
 		<h4>Share this</h4>

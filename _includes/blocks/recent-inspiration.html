@@ -1,13 +1,13 @@
 <section id="{{include.block.id}}" class="{% if include.block.background_color == 'pink' %}pink-bg {% endif %}">
 	<div class="container home-container">
-		{% assign latest_motivation = site.motivation.last %}
+		{% assign latest_inspiration = site.inspiration.last %}
 		<h1 class="home-section-title">Daily Inspiration</h1>
-		<a href="{{latest_motivation.url}}" class="home-inspiration">
-			{% include motivation/card.html
-				quote=latest_motivation.quote
-				author=latest_motivation.author
-				image=latest_motivation.image
-				url=latest_motivation.url
+		<a href="{{latest_inspiration.url}}" class="home-inspiration">
+			{% include inspiration/card.html
+				quote=latest_inspiration.quote
+				author=latest_inspiration.author
+				image=latest_inspiration.image
+				url=latest_inspiration.url
 				image_scale="true"
 			%}
 		</a>

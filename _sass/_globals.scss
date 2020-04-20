@@ -1,21 +1,15 @@
 @import "variables";
 
+/* don't add a background color - it will hide the pink background */
 html, body {
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-  /*position: relative;*/
-	/*background-color: #F9FAFA;*/
 }
 
 main {
-  /*padding-top: $navbar-height;*/
-  /*min-height: 100vh; // will cover the 100% of viewport
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 200px; // still weird*/
+
 }
 
 * {
@@ -115,25 +109,6 @@ hr {
   @media (min-width: $md) {
     height: 60vh;
     min-height: 600px;
-  }
-}
-
-/* Pagination */
-
-.pagination-nav {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.page-item.active .page-link {
-  background-color: $vivid-pink;
-  border-color: $vivid-pink;
-}
-
-.page-link {
-  color: $vivid-pink;
-  &:hover {
-    color: $vivid-pink;
   }
 }
 

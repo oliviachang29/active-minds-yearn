@@ -1,16 +1,22 @@
 <div class="post-card-container d-flex {{include.container_class}}">
-	<a class="post-card-image-container" href="{{include.post.url}}">
-		<img src="{{include.post.featured_image}}" class="lazy post-card-image">
-	</a>
+	{% if include.post.featured_image %}
+		<a class="post-card-image-container" href="{{include.post.url}}">
+			<img src="{{include.post.featured_image}}" class="lazy post-card-image">
+		</a>
+	{% endif %}
 	<div class="post-card-metadata d-flex flex-column justify-content-center">
-		<div class="post-date-n-tags post-card-date-n-tags">
-			<span class="post-date">{{include.post.date | date_to_string}}</span>
-			{% include blog_post/tags.html tags=include.post.tags %}
-		</div>
-		<!-- <div> -->
+		{% if include.post.date or include.post.tags %}
+			<div class="post-date-n-tags post-card-date-n-tags">
+				<span class="post-date">{{include.post.date | date_to_string}}</span>
+				{% include blog_post/tags.html tags=include.post.tags %}
+			</div>
+		{% endif %}
+		{% if include.post.title %}
 			<a href="{{include.post.url}}"><h1 class="post-title post-card-title">{{include.post.title}}</h1></a>
-			<h3 class="post-subheading">{{include.post.subheading}}</h3>
-		<!-- </div> -->
+		{% endif %}
+		{% if include.post.subheading %}
+			<h3 class="post-subheading post-card-subheading">{{include.post.subheading}}</h3>
+		{% endif %}
 		<a class="post-card-read-more-btn button" href="{{include.post.url}}">
 			Read More
 		</a>

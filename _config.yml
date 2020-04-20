@@ -23,9 +23,9 @@ collections:
     output: true
     permalink: /blog/:year-:month-:day-:title:output_ext
     layout: post
-  motivation:
-    title: Motivation
-    layout: motivation_item
+  inspiration:
+    title: inspiration
+    layout: inspiration_item
     output: true
     permalink: /inspiration/:year-:month-:day:output_ext
   uploads:
@@ -41,9 +41,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "motivation"
+      type: "inspiration"
     values:
-      layout: "motivation_item"
+      layout: "inspiration_item"
 pagination:
   enabled: true
   sort_reverse: true

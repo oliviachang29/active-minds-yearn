@@ -1,11 +1,12 @@
 ---
 title: 'Demo Content and Everything'
 date: 2018-06-30 00:00:00
-subheading: Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+subheading: 
 tags:
 - tag1
 - tag2
 featured_image: '/uploads/2.jpg'
+featured_video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/AgpWX18dby4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 ---
 
 This page is a demo that shows everything you can do inside portfolio and blog posts.
@@ -37,7 +38,9 @@ You can throw in some horizontal rules too:
 ### Images
 
 <img src="/uploads/demo-portrait.jpg">
+Some text here
 <img src="/uploads/demo-landscape.jpg">
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 <img src="/uploads/demo-square.jpg">
 <img src="/uploads/demo-landscape-2.jpg">
 
