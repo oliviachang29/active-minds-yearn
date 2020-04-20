@@ -23,7 +23,7 @@ fields:
   template_types:
   - carousel
   - image-left-text-right
-  - centered-text-with-background-image
+  - centered-text-w-bg-image
   - recent-blog-post
   - recent-inspiration
   config:
