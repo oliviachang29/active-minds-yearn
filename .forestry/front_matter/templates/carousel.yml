@@ -32,23 +32,16 @@ fields:
     config:
       required: false
     label: Text
-  - name: url
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: ''
-        file: 
-        path: 
-    label: URL
   - name: background_image
     type: file
     config:
       maxSize: 250
     label: Background Image
+  - name: button
+    type: include
+    config: {}
+    template: button
+    label: Button
   config:
     min: 
     max: 
