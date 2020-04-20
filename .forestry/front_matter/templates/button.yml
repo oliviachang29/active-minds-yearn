@@ -2,9 +2,6 @@
 label: Button
 hide_body: true
 fields:
-- name: show_button
-  type: boolean
-  label: Show Button
 - name: button
   type: field_group
   config: {}
@@ -21,5 +18,4 @@ fields:
     label: Link
   label: Button
   showOnly:
-    field: show_button
     value: true
