@@ -48,24 +48,7 @@ fields:
       format: markdown
   label: text
 - name: button
-  type: field_group
+  type: include
   config: {}
-  fields:
-  - name: text
-    type: text
-    config:
-      required: false
-    label: text
-  - name: link
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: 
-        file: 
-        path: 
-    label: link
+  template: button
   label: button
