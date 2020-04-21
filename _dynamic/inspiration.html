@@ -6,18 +6,18 @@ js_file: "/assets/js/inspiration.js"
 pink_background: true
 pagination: 
   enabled: true
-  collection: motivation
+  collection: inspiration
   permalink: "/:num/"
 ---
 <div class="container">
 	<h1 class="page-title">Inspiration</h1>
 	<div class="row inspiration-row">
 		{% for item in paginator.posts %}
-			<div class="w-100 motivation-infinite-scroll-append
-							{% cycle 'col-xs-12 motivation-1',
-								 'col-lg-6 motivation-2', 'col-lg-6 motivation-2', %}">
+			<div class="w-100 inspiration-infinite-scroll-append
+							{% cycle 'col-xs-12 inspiration-1',
+								 'col-lg-6 inspiration-2', 'col-lg-6 inspiration-2', %}">
 				<a href="{{item.url}}">
-					{% include motivation/card.html
+					{% include inspiration/card.html
 						quote=item.quote
 						author=item.author
 						image=item.image
