@@ -7,22 +7,26 @@
 	{% endif %}>
   <img class="d-block w-100 h-100 lazy centered-text-w-bg-image-background-image" src="{{ include.block.background_image }}" alt="First slide">
   <div class="centered-text-w-bg-image-text-container">
+  	<!-- Mini Title -->
 		{% if include.block.mini_title and include.block.mini_title != "" and include.block.mini_title != nil %}
 			<h5 class="centered-text-w-bg-image-mini-title">{{include.block.mini_title}}</h5>
 		{% endif %}
+		<!-- Title -->
 	  {% if include.block.title and include.block.title != "" and include.block.title != nil %}
 	  	<h1 class="centered-text-w-bg-image-title
 	  						{% if include.type == 'carousel' %}carousel-title {% endif %}
 	  						">{{include.block.title}}</h1>
 	  {% endif %}
+	  <!-- Text -->
 	  {% if include.block.text and include.block.text != "" and include.block.text != nil %}
 	  	<p class="centered-text-w-bg-image-text
 	  						{% if include.type == 'carousel' %}carousel-text {% endif %}
 	  						">{{include.block.text}}</p>
 	  {% endif %}
+	  <!-- Button -->
 	  {% if include.block.button.link and include.block.button.link != "" and include.block.button.link != nil %}
 	  	<div class="centered-text-w-bg-image-button-container">
-	  		<a class="button white-button centered-text-w-bg-image-button" href="{{include.block.button.link}}">{{include.block.button.text}}</a>
+	  		<a class="button white-button centered-text-w-bg-image-button" href="{% include link-renderer.html link=include.block.button.link %}">{{include.block.button.text}}</a>
 	  	</div>
 	  {% endif %}
 	</div>

@@ -42,12 +42,10 @@ function initJS() {
     markCurrentLink()
     unveilImages($('img'))
     var feed = new Instafeed({
-        get: 'user',
-        userId: '25454876917', // for activemindsyearn
-        // get: 'tagged',
-        // tagName: 'awesome',
+        limit: 3,
         accessToken: InstagramToken,
-        debug: true
+        debug: true,
+        template: '<a class="col-md-4 instagram-post" href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
     });
     feed.run();
 }

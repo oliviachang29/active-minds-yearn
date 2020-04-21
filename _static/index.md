@@ -8,33 +8,26 @@ page_sections:
   id: home-carousel
   carousel_items:
   - background_image: "/uploads/1.jpg"
-    title: Nullam id dolor id nibh ultricies vehicula ut id elit
-    mini_title: Featured on the blog
-    text: Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean
-      lacinia bibendum nulla sed consectetur.
+    title: "Hi, I'm Aminata"
+    mini_title: About
+    text: 'Learn more about why I started this blog.'
     button:
-      text: Read More
-      link: "/blog"
-    url: ''
+      text: About Me
+      link: _static/about.md
   - background_image: "/uploads/2.jpg"
-    title: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-      ut fermentum massa justo sit amet risus
-    mini_title: Vestibulum Vehicula Dolor Mattis
-    text: Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur
-      est at lobortis.
+    title: Quote about Courage
+    mini_title: Inspiration
+    text: Check out my latest inspirational quote!
     button:
       text: Read More
-      link: "/blog"
-    url: ''
+      link: _inspiration/march-3-2020.md
   - background_image: "/uploads/3.jpg"
-    title: Cras mattis consectetur purus sit amet fermentum
+    title: Demo Content and Everything
     mini_title: Featured on the blog
-    text: Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit.
+    text: Check out my latest blog post!
     button:
       text: Read More
-      link: "/blog"
-    url: ''
+      link: _posts/2018-06-30-demo-content-and-everything.md
 - template: image-left-text-right
   id: about
   background_color: white
@@ -64,21 +57,21 @@ page_sections:
 - template: recent-blog-post
   id: blog
   background_color: white
-- template: recent-inspiration
-  id: inspiration
-  background_color: pink
 - template: centered-text-w-bg-image
   id: cta
   background_image: "/uploads/7.jpg"
-  title: Section 2
+  mini_title: ''
+  title: Section 3
   text: Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel
     augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis
     ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus,
     porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.
     Curabitur blandit tempus porttitor.
-  show_button: false
   button:
     text: ''
     link: ''
+- template: recent-inspiration
+  id: inspiration
+  background_color: pink
 
 ---

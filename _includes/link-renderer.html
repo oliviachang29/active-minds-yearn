@@ -1,0 +1,6 @@
+{% assign all_pages = site.pages | concat: site.documents %}
+{% for linked_page in all_pages %}
+	{% if linked_page.path == include.link %}
+		{{linked_page.url}}
+	{% endif %}
+{% endfor %}

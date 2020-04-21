@@ -10,7 +10,7 @@
 						<p>{{include.block.text}}</p>
 					{% endif %}
 					{% if include.block.button.link and include.block.button.link != "" and include.block.button.link != nil %}
-						<a class="button home-button button-large-padding" href="{{include.block.button.link}}">{{include.block.button.text}}</a>
+						<a class="button home-button button-large-padding" href="{% include link-renderer.html link=include.block.button.link %}">{{include.block.button.text}}</a>
 					{% endif %}
 				</div>
 			</div>

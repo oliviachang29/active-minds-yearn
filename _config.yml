@@ -7,7 +7,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 theme: minima
-include: ['_static', '_dynamic']
+include: ['_static', '_dynamic', 'uploads']
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -28,9 +28,6 @@ collections:
     layout: inspiration_item
     output: true
     permalink: /inspiration/:year-:month-:day:output_ext
-  uploads:
-    title: Uploads
-    output: false
 defaults:
   -
     scope:

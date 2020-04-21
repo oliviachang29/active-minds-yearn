@@ -1,0 +1,12 @@
+.instagram-section {
+	margin-top: 100px;
+	padding: 50px 0;
+}
+
+.instagram-post {
+	padding: 30px;
+	img {
+		width: 100%;
+		@include pink-box-shadow-left;
+	}
+}
