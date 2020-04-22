@@ -1,11 +1,28 @@
+@import "variables";
+
 .instagram-section {
 	margin-top: 100px;
 	padding: 50px 0;
 }
 
+#instafeed {
+	display: flex;
+	flex-direction: column;
+	@media (min-width: $md) {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
 .instagram-post {
-	padding: 30px;
+	margin-bottom: 40px;
+	@media (min-width: $md) {
+		padding: 0 30px;
+		width: 33%;
+		margin-bottom: 20px;
+	}
 	img {
+		object-fit: cover;
 		width: 100%;
 		@include pink-box-shadow-left;
 	}

@@ -114,3 +114,10 @@ section {
 .home-container {
 	padding: 0 30px;
 }
+
+.home-container .inspiration-card {
+	margin-left: 5px;
+	@media (min-width: $md) {
+		margin-left: 10px;
+	}
+}

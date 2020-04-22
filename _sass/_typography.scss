@@ -28,20 +28,21 @@
   font-style: normal;
 }
 
+* {
+  font-family: $paragraph-font,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 
 h1, h2 {
 	font-family: $title-font;
-	/*font-family: BureauGrotesque-OneFive;*/
-	/*text-transform: uppercase;*/
 	margin-bottom: 20px;
 }
 
 h3, h4, p {
-	font-family: $paragraph-font;
+	font-family: $paragraph-font, "Times New Roman", serif;
 }
 
 h5, h6 {
-	font-family: $link-font;
+	font-family: $link-font, "Lucida Console", Consolas, Courier, monospace;
 	text-transform: uppercase;
 	letter-spacing: 1.32px;
 	font-size: 13px;
