@@ -30,12 +30,13 @@ fields:
   type: blocks
   label: Page Sections
   template_types:
-  - carousel
-  - image-left-text-right
+  - content
   - centered-text-w-bg-image
+  - image-left-text-right
+  - image-right-text-left
+  - carousel
   - recent-blog-post
   - recent-inspiration
-  - content
   config:
     min: 
     max: 
