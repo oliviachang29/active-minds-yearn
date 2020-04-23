@@ -44,4 +44,4 @@ fields:
   label: Button
   showOnly:
     value: true
-  description: Add a link to another part of the site.
+  description: "<em>Optional  </em>Add a link to a different page."
