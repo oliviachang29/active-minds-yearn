@@ -9,7 +9,9 @@ fields:
   hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
+  description: "<em>Required </em>The title of the page. For example: <em>Home</em>,
+    <em>About</em>, <em>Blog</em>, <em>Video</em>"
 - type: text
   name: js_file
   label: js_file
@@ -31,3 +33,4 @@ fields:
   config: {}
   template: permalink
   label: Permalink
+  description: Don't change this for the home page!
