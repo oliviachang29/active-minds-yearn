@@ -17,36 +17,11 @@ fields:
 - name: carousel_items
   type: field_group_list
   fields:
-  - name: mini_title
-    type: text
-    config:
-      required: false
-    label: Mini Title
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: text
-    type: text
-    config:
-      required: false
-    label: Text
-  - name: background_image
-    type: file
-    config:
-      maxSize: 250
-    label: Background Image
-  - name: button
-    type: include
-    config: {}
-    template: button
-    label: Button
   - name: item
     type: include
     config: {}
     template: centered-text-w-bg-image
-    label: item
+    label: Carousel Item - using centered-text-w-bg-image
   config:
     min: 
     max: 
