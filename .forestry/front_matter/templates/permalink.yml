@@ -1,6 +1,7 @@
 ---
-label: Permalink
+label: include - permalink
 hide_body: true
+display_field: permalink
 fields:
 - name: permalink
   type: text
@@ -8,4 +9,5 @@ fields:
     required: false
   label: Link
   description: "<em>Required. </em>The link to the page. Should be formatted like
-    <em>/page_name</em>. For example, the about page has a permalink of <em>/about.</em>"
+    <em>/page_name</em>. For example, the about page has a permalink of <em>/about.
+    </em>You probably don't need to edit this!"
