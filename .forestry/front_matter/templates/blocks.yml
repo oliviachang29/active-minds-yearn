@@ -25,6 +25,7 @@ fields:
   - centered-text-w-bg-image
   - recent-blog-post
   - recent-inspiration
+  - content
   config:
     min: 
     max: 
