@@ -9,14 +9,6 @@ fields:
   label: template
   default: recent-blog-post
   hidden: true
-- name: id
-  type: text
-  config:
-    required: false
-  label: id
-  default: blog
-  description: "<em>Optional </em>The id of the section. You probably don't need to
-    change this."
 - name: background_color
   type: select
   default: pink
@@ -39,3 +31,8 @@ fields:
     required: false
   label: Title
   default: Latest Blog Post
+- name: id
+  type: include
+  config: {}
+  template: id
+  label: id
