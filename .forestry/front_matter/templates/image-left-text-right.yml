@@ -1,6 +1,7 @@
 ---
 label: Image Left, Text Right
 hide_body: true
+display_field: title
 fields:
 - name: template
   type: text
@@ -38,15 +39,17 @@ fields:
   config:
     required: false
   label: title
+  description: "<em>Optional </em>The title of the section. Renders in the large text
+    that appears above the paragraph."
 - name: text
   type: textarea
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
-  label: text
+  label: Paragraph Text
 - name: button
   type: include
   config: {}
