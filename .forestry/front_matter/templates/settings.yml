@@ -22,5 +22,11 @@ fields:
   - type: text
     name: description
     label: description
+- name: instagram_feed_title
+  type: text
+  config:
+    required: true
+  label: instagram_feed_title
+  default: Latest Instagram Posts
 pages:
 - _data/general.yml
