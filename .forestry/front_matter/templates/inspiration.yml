@@ -12,7 +12,7 @@ fields:
   name: image
   label: Background Image
   description: "<em>Required </em>The background image behind the quote."
-  default: "/uploads/5.jpg"
+  default: ''
 - type: textarea
   name: quote
   label: Quote
