@@ -10,22 +10,12 @@ fields:
   default: recent-inspiration
   hidden: true
 - name: id
-  type: text
-  config:
-    required: false
+  type: include
+  config: {}
+  template: id
   label: id
-  default: inspiration
 - name: background_color
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - white
-    - pink
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: background_color
+  type: include
+  config: {}
+  template: include-background-color-select
+  label: Background Color
