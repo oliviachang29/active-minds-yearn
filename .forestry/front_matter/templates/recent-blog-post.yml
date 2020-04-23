@@ -9,22 +9,6 @@ fields:
   label: template
   default: recent-blog-post
   hidden: true
-- name: background_color
-  type: select
-  default: pink
-  config:
-    required: true
-    options:
-    - white
-    - pink
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Color
-  description: "<em>Optional </em>Determines the background color of the section.
-    Default is pink."
 - name: title
   type: text
   config:
@@ -36,3 +20,8 @@ fields:
   config: {}
   template: id
   label: id
+- name: background_color
+  type: include
+  config: {}
+  template: include-background-color-select
+  label: Background Color
