@@ -11,7 +11,13 @@ fields:
     config:
       required: false
     label: Text
-  - name: link
+  - name: external_link
+    type: text
+    config:
+      required: false
+    label: External Link
+    description: A URL that links to a different website.
+  - name: internal_link
     type: select
     default: []
     config:
@@ -22,8 +28,8 @@ fields:
         section: 
         file: 
         path: 
-    label: Link
-    description: The link to the other part of the site. Choose from one of the options
+    label: Internal Link
+    description: Link to the other part of the site. Choose from one of the options
       below.
   label: Button
   showOnly:
