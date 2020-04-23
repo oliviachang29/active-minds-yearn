@@ -45,9 +45,9 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
-      format: markdown
+      format: html
   label: adsense_code
 pages:
 - _data/general.yml
