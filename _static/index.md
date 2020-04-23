@@ -2,7 +2,7 @@
 layout: blocks
 title: Home
 permalink: "/"
-js_file: "/assets/js/index.js"
+js_file: "/assets/js/blocks.js"
 page_sections:
 - template: carousel
   id: home-carousel

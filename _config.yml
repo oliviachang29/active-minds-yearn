@@ -25,9 +25,12 @@ collections:
     layout: post
   inspiration:
     title: inspiration
-    layout: inspiration_item
     output: true
     permalink: /inspiration/:year-:month-:day:output_ext
+  static:
+    title: Static
+    output: true
+    permalink: "/:title"
 defaults:
   -
     scope:
@@ -41,6 +44,12 @@ defaults:
       type: "inspiration"
     values:
       layout: "inspiration_item"
+  -
+    scope:
+      path: ""
+      type: "static"
+    values:
+      layout: "blocks"
 pagination:
   enabled: true
   sort_reverse: true
