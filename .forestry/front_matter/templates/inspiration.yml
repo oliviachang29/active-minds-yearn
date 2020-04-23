@@ -25,7 +25,7 @@ fields:
   name: author
   label: Author
   description: "<em>Optional </em>The author of the quote. You don't have to include
-    it if the quote if from yourself!"
+    it if the quote is from yourself!"
 - name: date
   type: datetime
   label: Date
