@@ -1,4 +1,16 @@
 ---
 label: Content
 hide_body: false
-fields: []
+fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: template
+  default: content
+  hidden: true
+- name: background_color
+  type: include
+  config: {}
+  template: include-background-color-select
+  label: Background Color
