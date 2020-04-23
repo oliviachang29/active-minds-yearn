@@ -29,11 +29,13 @@
 			{% endunless %}
 		{% endif %}
 		<div class="post-content content">
+			{{ site.data.general.adsense_code }}
 			{{include.post.content}}
 			<div class="share-bar">
 				<h4>Share this</h4>
 				{% include share-icons.html %}
 			</div>
+			{{ site.data.general.adsense_code }}
 			{% include blog_post/next-n-prev-post-navigation.html %}
 			{% include blog_post/disqus.html %}
 		</div>
