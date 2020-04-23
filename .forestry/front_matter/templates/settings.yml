@@ -8,25 +8,35 @@ fields:
   fields:
   - type: file
     name: navigation
-    label: navigation
+    label: Navigation Logo
+    description: "<em>Required </em>The logo that appears in the top left."
   - type: file
     name: footer
-    label: footer
+    label: Footer Logo
+    description: "<em>Required </em>The logo that appears in the footer."
 - type: field_group
   name: newsletter
   label: newsletter
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
+    description: The title of the newsletter box, encouraging people to subscribe
+      to the newsletter.
+    config:
+      required: true
   - type: text
     name: description
-    label: description
+    label: Description
+    description: "<em>Required </em>The description in the newsletter box."
+    config:
+      required: true
 - name: instagram_feed_title
   type: text
   config:
     required: true
-  label: instagram_feed_title
+  label: Instagram Feed Title
   default: Latest Instagram Posts
+  description: "<em>Required </em>The title above the Instagram Feed."
 pages:
 - _data/general.yml
