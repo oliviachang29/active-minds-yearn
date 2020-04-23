@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: field_group
   name: logo
-  label: logo
+  label: Logo
   fields:
   - type: file
     name: navigation
@@ -14,6 +14,7 @@ fields:
     name: footer
     label: Footer Logo
     description: "<em>Required </em>The logo that appears in the footer."
+  description: The logo of the site.
 - type: field_group
   name: newsletter
   label: newsletter
@@ -31,6 +32,7 @@ fields:
     description: "<em>Required </em>The description in the newsletter box."
     config:
       required: true
+  description: Customize the newsletter options.
 - name: instagram_feed_title
   type: text
   config:
