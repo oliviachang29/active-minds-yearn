@@ -16,8 +16,5 @@ fields:
 - type: file
   name: featured_image
   label: featured_image
-- type: boolean
-  name: pink_background
-  label: pink_background
 pages:
 - _static/about.md
