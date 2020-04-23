@@ -9,14 +9,21 @@ fields:
   default: blocks
   hidden: true
 - type: text
+  name: js_file
+  label: js_file
+  hidden: true
+- name: permalink
+  type: include
+  config: {}
+  template: permalink
+  label: Permalink
+  description: Don't change this for the home page!
+  hidden: true
+- type: text
   name: title
   label: Title
   description: "<em>Required </em>The title of the page. For example: <em>Home</em>,
     <em>About</em>, <em>Blog</em>, <em>Video</em>"
-- type: text
-  name: js_file
-  label: js_file
-  hidden: true
 - name: page_sections
   type: blocks
   label: Page Sections
@@ -30,10 +37,3 @@ fields:
   config:
     min: 
     max: 
-- name: permalink
-  type: include
-  config: {}
-  template: permalink
-  label: Permalink
-  description: Don't change this for the home page!
-  hidden: true
