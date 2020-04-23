@@ -15,11 +15,13 @@ fields:
     required: false
   label: id
   default: blog
+  description: "<em>Optional </em>The id of the section. You probably don't need to
+    change this."
 - name: background_color
   type: select
-  default: []
+  default: pink
   config:
-    required: false
+    required: true
     options:
     - white
     - pink
@@ -28,7 +30,9 @@ fields:
       section: 
       file: 
       path: 
-  label: background_color
+  label: Background Color
+  description: "<em>Optional </em>Determines the background color of the section.
+    Default is pink."
 - name: title
   type: text
   config:
