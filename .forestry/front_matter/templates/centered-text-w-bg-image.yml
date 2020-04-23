@@ -1,6 +1,7 @@
 ---
 label: Centered Text with Background Image
 hide_body: true
+display_field: title
 fields:
 - name: template
   type: text
@@ -9,28 +10,33 @@ fields:
   label: template
   hidden: true
   default: centered-text-w-bg-image
-- name: id
-  type: text
-  config:
-    required: false
-  label: id
 - name: background_image
   type: file
   config:
     maxSize: 250
   label: Background Image
+  description: "<em>Required </em>The background image that appears behind the text."
+  default: ''
 - name: title
   type: text
   config:
     required: false
-  label: title
+  label: Title
+  description: "<em>Optional </em>The title of the section."
 - name: text
   type: text
   config:
     required: false
-  label: text
+  description: "<em>Optional </em>The text of the section. Appears in smaller font
+    below the title."
+  label: Text
 - name: button
   type: include
   config: {}
   template: button
   label: Button
+- name: id
+  type: include
+  config: {}
+  template: id
+  label: id
