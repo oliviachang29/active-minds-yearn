@@ -27,3 +27,5 @@ fields:
     max: 
     labelField: title
   label: Carousel Items
+  description: The rotating slideshow of images and text (as seen in the home page!).
+    You need to add at least one carousel item for it to work.
