@@ -17,7 +17,7 @@ fields:
   description: The logo of the site.
 - type: field_group
   name: newsletter
-  label: newsletter
+  label: Newsletter
   fields:
   - type: text
     name: title
