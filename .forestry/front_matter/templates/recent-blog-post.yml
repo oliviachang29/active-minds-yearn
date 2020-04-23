@@ -29,3 +29,9 @@ fields:
       file: 
       path: 
   label: background_color
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Latest Blog Post
