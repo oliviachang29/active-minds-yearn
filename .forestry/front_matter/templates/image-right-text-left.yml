@@ -15,20 +15,6 @@ fields:
   config:
     required: false
   label: id
-- name: background_color
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - white
-    - pink
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: background_color
 - name: image
   type: file
   config:
@@ -53,3 +39,8 @@ fields:
   config: {}
   template: button
   label: button
+- name: background_color
+  type: include
+  config: {}
+  template: include-background-color-select
+  label: Background Color
