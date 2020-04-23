@@ -23,13 +23,6 @@ fields:
     required: false
   label: Title
   description: "<em>Optional </em>The title of the section."
-- name: text
-  type: text
-  config:
-    required: false
-  description: "<em>Optional </em>The text of the section. Appears in smaller font
-    below the title."
-  label: Text
 - name: button
   type: include
   config: {}
@@ -40,3 +33,13 @@ fields:
   config: {}
   template: id
   label: id
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
+  description: "<em>Optional </em>Appears as a paragraph below the title."
