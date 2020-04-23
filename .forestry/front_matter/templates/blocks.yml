@@ -11,9 +11,6 @@ fields:
   name: title
   label: title
 - type: text
-  name: permalink
-  label: permalink
-- type: text
   name: js_file
   label: js_file
   hidden: true
@@ -29,3 +26,8 @@ fields:
   config:
     min: 
     max: 
+- name: permalink
+  type: include
+  config: {}
+  template: permalink
+  label: Permalink
