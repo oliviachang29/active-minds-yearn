@@ -8,15 +8,6 @@ fields:
   label: layout
   default: inspiration_item
   hidden: true
-- type: file
-  name: image
-  label: Background Image
-  description: '<em>Required </em>The background image behind the quote. If the site
-    is loading slowly, upload smaller photos! You can resize photos here: <a href=""
-    title="" target="_blank">https://bulkresizephotos.com</a>'
-  default: ''
-  config:
-    maxSize: 1
 - type: textarea
   name: quote
   label: Quote
@@ -40,6 +31,15 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+- type: file
+  name: image
+  label: Background Image
+  description: '<em>Required </em>The background image behind the quote. If the site
+    is loading slowly, upload smaller photos! You can resize photos here: <a href=""
+    title="" target="_blank">https://bulkresizephotos.com</a>'
+  default: ''
+  config:
+    maxSize: 1
 pages:
 - _inspiration/march-1-2020.md
 - _inspiration/march-10-2020.md
