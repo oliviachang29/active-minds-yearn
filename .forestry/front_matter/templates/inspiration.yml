@@ -16,7 +16,7 @@ fields:
     title="" target="_blank">https://bulkresizephotos.com</a>'
   default: ''
   config:
-    maxSize: 5
+    maxSize: 1
 - type: textarea
   name: quote
   label: Quote
