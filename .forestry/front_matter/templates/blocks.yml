@@ -24,6 +24,8 @@ fields:
   label: Title
   description: "<em>Required </em>The title of the page. For example: <em>Home</em>,
     <em>About</em>, <em>Blog</em>, <em>Video</em>"
+  config:
+    required: true
 - name: page_sections
   type: blocks
   label: Page Sections
