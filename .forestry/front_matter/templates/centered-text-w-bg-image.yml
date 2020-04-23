@@ -39,7 +39,9 @@ fields:
 - name: background_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 5
   label: Background Image
-  description: "<em>Required </em>The background image that appears behind the text."
+  description: '<em>Required </em>The background image that appears behind the text.
+    If the site is loading slowly, upload smaller photos! You can resize photos here:
+    <a href="https://bulkresizephotos.com" title="https://bulkresizephotos.com" target="_blank">https://bulkresizephotos.com</a>'
   default: ''
