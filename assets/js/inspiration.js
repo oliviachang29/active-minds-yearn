@@ -10,5 +10,5 @@ $content.infiniteScroll({
 
 // try waiting until everything is fully loaded
 $content.on( 'append.infiniteScroll', function( event, response ) {
-	$('.inspiration-card-image').trigger('unveil');
+	unveilImages($('.inspiration-card-image'))
 })

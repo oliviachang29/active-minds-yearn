@@ -11,5 +11,5 @@ $content.infiniteScroll({
 });
 
 $content.on( 'append.infiniteScroll', function( event, response ) {
-	$('.post-card-image').trigger('unveil');
+	unveilImages($('.post-card-image'))
 })
