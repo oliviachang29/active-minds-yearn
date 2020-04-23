@@ -13,7 +13,7 @@ fields:
 - name: image
   type: file
   config:
-    maxSize: 5
+    maxSize: 1
   label: image
   description: '<em>Required </em>The image that appears to the right of the text.
     If the site is loading slowly, upload smaller photos! You can resize photos here:
