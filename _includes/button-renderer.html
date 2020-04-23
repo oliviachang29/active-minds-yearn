@@ -1,0 +1,18 @@
+{% if include.button.text and include.button.text != "" and include.button.text != nil %}
+	{% if include.button.external_link and include.button.external_link != "" and include.button.external_link != nil %}
+		{% assign link = include.button.external_link %}
+	{% else if include.button.internal_link and include.button.internal_link != "" and include.button.internal_link != nil %}
+		{% assign all_pages = site.pages | concat: site.documents %}
+		{% for linked_page in all_pages %}
+			{% if linked_page.path == include.button.internal_link %}
+				{% assign link = linked_page.url %}
+			{% endif %}
+		{% endfor %}
+	{% else %}
+		{% assign link = "#" %}
+	{% endif %}
+
+	<div class="{{include.container_classes}}">
+		<a class="button {{include.button_classes}}" href="{{link}}">{{include.button.text}}</a>
+	</div>
+{% endif %}

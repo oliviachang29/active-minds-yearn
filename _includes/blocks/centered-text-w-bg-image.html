@@ -24,11 +24,9 @@
 	  						">{{include.block.text}}</p>
 	  {% endif %}
 	  <!-- Button -->
-	  {% if include.block.button.link and include.block.button.link != "" and include.block.button.link != nil %}
-	  	<div class="centered-text-w-bg-image-button-container">
-	  		<a class="button white-button centered-text-w-bg-image-button" href="{% include link-renderer.html link=include.block.button.link %}">{{include.block.button.text}}</a>
-	  	</div>
-	  {% endif %}
+	  {% include button-renderer.html button=include.block.button
+	  								  button_classes="white-button centered-text-w-bg-image-button"
+	  								  container_classes="centered-text-w-bg-image-button-container" %}
 	</div>
 </div>
 
