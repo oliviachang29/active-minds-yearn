@@ -22,7 +22,10 @@ fields:
         section: 
         file: 
         path: 
-    label: link
+    label: Link
+    description: The link to the other part of the site. Choose from one of the options
+      below.
   label: Button
   showOnly:
     value: true
+  description: Add a link to another part of the site.
