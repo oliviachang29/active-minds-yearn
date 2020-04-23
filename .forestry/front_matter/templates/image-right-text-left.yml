@@ -1,6 +1,7 @@
 ---
 label: Image Right, Text Left
 hide_body: true
+display_field: title
 fields:
 - name: template
   type: text
