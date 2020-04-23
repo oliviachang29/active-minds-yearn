@@ -2,7 +2,8 @@
 layout: blocks
 title: About
 permalink: "/about"
-js_file: "/assets/js/blocks.js"
+js_files:
+- "/assets/js/blocks.js"
 page_sections:
 - template: centered-text-w-bg-image
   background_image: "/uploads/about.jpg"

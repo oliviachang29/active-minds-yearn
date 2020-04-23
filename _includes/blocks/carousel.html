@@ -1,20 +1,22 @@
-<div id="{{include.block.id}}" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		{% for item in include.block.carousel_items %}
-	  		{% if forloop.first %}
-	  			<li data-target="#{{include.block.id}}" data-slide-to="{{forloop.index | minus: 1 }}" class="active"></li>
-	  		{% else %}
-	  			<li data-target="#{{include.block.id}}" data-slide-to="{{forloop.index | minus: 1 }}"></li>
-	  		{% endif %}
-	  	{% endfor %}
-	  </ol>
-	  <div class="carousel-inner">
-	  	{% for item in include.block.carousel_items %}
-	  		{% if forloop.first %}
-	  			{% include blocks/centered-text-w-bg-image.html block=item active="true" type="carousel" %}
-	  		{% else %}
-	  			{% include blocks/centered-text-w-bg-image.html block=item type="carousel" %}
-	  		{% endif %}
-	  	{% endfor %}
-	  </div>
-</div>
+{% unless include.block.carousel_items.size == 0 %}
+	<div id="{{include.block.id}}" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			{% for item in include.block.carousel_items %}
+		  		{% if forloop.first %}
+		  			<li data-target="#{{include.block.id}}" data-slide-to="{{forloop.index | minus: 1 }}" class="active"></li>
+		  		{% else %}
+		  			<li data-target="#{{include.block.id}}" data-slide-to="{{forloop.index | minus: 1 }}"></li>
+		  		{% endif %}
+		  	{% endfor %}
+		  </ol>
+		  <div class="carousel-inner">
+		  	{% for item in include.block.carousel_items %}
+		  		{% if forloop.first %}
+		  			{% include blocks/centered-text-w-bg-image.html block=item active="true" type="carousel" %}
+		  		{% else %}
+		  			{% include blocks/centered-text-w-bg-image.html block=item type="carousel" %}
+		  		{% endif %}
+		  	{% endfor %}
+		  </div>
+	</div>
+{% endunless %}

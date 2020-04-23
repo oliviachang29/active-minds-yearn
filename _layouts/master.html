@@ -11,7 +11,7 @@
 		{% include footer.html %}
 	</body>
 	{% include scripts.html %}
-	{% if page.js_file %}
-		<script src="{{page.js_file}}"></script>
-	{% endif %}
+	{% for js_file in page.js_files %}
+		<script src="{{js_file}}"></script>
+	{% endfor %}
 </html>

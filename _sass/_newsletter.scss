@@ -1,3 +1,4 @@
+/* Newsletter */
 .form-control {
   background-color: transparent;
   border: none;
@@ -26,4 +27,20 @@
 }
 
 .newsletter-description {
+}
+
+/* Modal */
+
+/* move the modal down a little bit */
+.modal {
+  top: 5vh;
+}
+
+.modal-content {
+  border-radius: 0;
+  @include pink-box-shadow-left;
+}
+
+.modal-body {
+  padding: 30px 30px 40px;
 }

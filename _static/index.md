@@ -2,7 +2,9 @@
 layout: blocks
 title: Home
 permalink: "/"
-js_file: "/assets/js/blocks.js"
+js_files:
+- "/assets/js/blocks.js"
+- "/assets/js/index.js"
 page_sections:
 - template: carousel
   id: home-carousel
@@ -76,3 +78,22 @@ page_sections:
   background_color: pink
   title: Inspiration
 ---
+
+<!-- Modal -->
+<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsletterModalLabel">{{site.data.general.newsletter.title}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="newsletter-title">Get the latest updates on Active Minds Yearn</h3>
+        <p class="newsletter-description">{{site.data.general.newsletter.description}}</p>
+        {% include mailchimp.html %}
+      </div>
+    </div>
+  </div>
+</div>
