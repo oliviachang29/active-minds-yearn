@@ -1,6 +1,7 @@
 ---
 label: Blocks
 hide_body: true
+display_field: title
 fields:
 - type: text
   name: layout
@@ -35,3 +36,4 @@ fields:
   template: permalink
   label: Permalink
   description: Don't change this for the home page!
+  hidden: true
