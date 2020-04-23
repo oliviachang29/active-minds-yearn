@@ -13,7 +13,6 @@ sections:
   match: "**/*"
   templates:
   - blocks
-  - static
 - type: jekyll-posts
   label: Blog Posts
   create: documents
@@ -29,7 +28,7 @@ sections:
   label: Settings
 - type: document
   path: _data/social_media.yml
-  label: Social Media
+  label: Social Media Links
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
