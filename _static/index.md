@@ -8,9 +8,9 @@ page_sections:
   id: home-carousel
   carousel_items:
   - background_image: "/uploads/1.jpg"
-    title: "Hi, I'm Aminata"
+    title: Hi, I'm Aminata
     mini_title: About
-    text: 'Learn more about why I started this blog.'
+    text: Learn more about why I started this blog.
     button:
       text: About Me
       internal_link: _static/about.md
@@ -73,5 +73,6 @@ page_sections:
 - template: recent-inspiration
   id: inspiration
   background_color: pink
+  title: Inspiration
 
 ---
