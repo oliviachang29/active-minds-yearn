@@ -15,10 +15,10 @@ fields:
     schema:
       format: markdown
   label: Featured Video
-  description: '<em>Optional </em>Copy and paste the code for embedding a video from
-    Youtube. This will replace the featured image. Instructions for embedding a video:
-    <a href="https://support.google.com/youtube/answer/171780?hl=en" title="https://support.google.com/youtube/answer/171780?hl=en"
-    target="_blank">https://support.google.com/youtube/answer/171780?hl=en</a>'
+  description: '<em>Optional </em>If you want the blog post to be a video, copy and
+    paste the code for embedding a video from Youtube. This will replace the featured
+    image. Instructions for embedding a video: <a href="https://support.google.com/youtube/answer/171780?hl=en"
+    title="https://support.google.com/youtube/answer/171780?hl=en" target="_blank">https://support.google.com/youtube/answer/171780?hl=en</a>'
 - type: text
   name: title
   label: Blog Post Title
