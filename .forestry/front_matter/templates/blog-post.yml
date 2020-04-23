@@ -4,20 +4,38 @@ hide_body: false
 fields:
 - type: file
   name: featured_image
-  label: featured_image
+  label: Featured Image
+  description: "<em>Required </em>The main image of the blog post."
 - type: text
   name: title
-  label: title
+  label: Blog Post Title
+  description: "<em>Required </em>The title of the blog post. It appears in large
+    text above the post content."
+  config:
+    required: true
+    min: 1
 - type: text
   name: subheading
-  label: subheading
+  description: "<em>Optional </em>The description of the blog post that goes under
+    the title. Some blogs like to use the first few lines of the blog post for the
+    description."
+  label: Description
+  config:
+    min: 1
 - type: datetime
   name: date
-  label: date
+  label: Date
+  description: "<em>Required </em>The date that this article was published. The time
+    doesn't matter, since it's not displayed."
+  config:
+    required: true
+  default: now
 - name: tags
   type: tag_list
   default: []
-  label: tags
+  label: Tags
+  description: 'Words that relate to the blog post. For example: <em>inspiration,
+    wellness, nature, courage</em>'
 pages:
 - _posts/2018-06-30-demo-content-and-everything.md
 - _posts/2019-03-24-demo_post_2.md
