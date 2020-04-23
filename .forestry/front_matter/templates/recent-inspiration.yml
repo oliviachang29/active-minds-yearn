@@ -19,3 +19,11 @@ fields:
   config: {}
   template: include-background-color-select
   label: Background Color
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: "<em>Required </em>The title of the section. The large text that appears
+    above the inspirational quote."
+  default: Inspiration
