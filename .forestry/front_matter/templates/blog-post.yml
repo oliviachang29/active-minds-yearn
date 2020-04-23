@@ -6,6 +6,19 @@ fields:
   name: featured_image
   label: Featured Image
   description: "<em>Required </em>The main image of the blog post."
+- name: featured_video
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Featured Video
+  description: '<em>Optional </em>Copy and paste the code for embedding a video from
+    Youtube. This will replace the featured image. Instructions for embedding a video:
+    <a href="https://support.google.com/youtube/answer/171780?hl=en" title="https://support.google.com/youtube/answer/171780?hl=en"
+    target="_blank">https://support.google.com/youtube/answer/171780?hl=en</a>'
 - type: text
   name: title
   label: Blog Post Title
@@ -21,7 +34,8 @@ fields:
     description."
   label: Description
   config:
-    min: 1
+    min: 
+    required: false
 - type: datetime
   name: date
   label: Date
