@@ -4,16 +4,12 @@ hide_body: true
 fields:
 - type: field_group_list
   name: Social media
-  label: Social media
   fields:
-  - type: text
-    name: url
-    label: url
   - name: type
     type: select
     default: []
     config:
-      required: false
+      required: true
       options:
       - Twitter
       - Facebook
@@ -29,8 +25,15 @@ fields:
         section: 
         file: 
         path: 
-    label: type
+    label: Type
+    description: The type of the social media link.
+  - type: text
+    name: url
+    label: Link/URL
+    description: 'The URL of the social media link. ex: <em>https://instagram.com/username</em>'
   config:
     labelField: type
+  label: Social Media
+  description: The social media links in the top right and in the footer.
 pages:
 - _data/social_media.yml
