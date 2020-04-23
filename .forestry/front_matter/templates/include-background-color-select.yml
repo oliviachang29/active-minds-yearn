@@ -1,4 +1,18 @@
 ---
 label: include - background color select
 hide_body: true
-fields: []
+fields:
+- name: background_color
+  type: select
+  default: white
+  config:
+    required: true
+    options:
+    - white
+    - pink
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Color
