@@ -57,7 +57,7 @@ page_sections:
 - template: recent-blog-post
   id: blog
   background_color: white
-  title: Latest blog Post
+  title: Latest Blog Post
 - template: centered-text-w-bg-image
   id: cta
   background_image: "/uploads/7.jpg"
