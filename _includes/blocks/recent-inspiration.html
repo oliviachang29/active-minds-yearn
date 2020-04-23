@@ -1,7 +1,7 @@
 <section id="{{include.block.id}}" class="{% if include.block.background_color == 'pink' %}pink-bg {% endif %}">
 	<div class="container home-container">
 		{% assign latest_inspiration = site.inspiration.last %}
-		<h1 class="home-section-title">{% if include.block.title %}{{include.block.title}}{% else %}Daily Inspiration{% endif%}</h1>
+		<h1 class="home-section-title">{% if include.block.title %}{{include.block.title}}{% else %}Inspiration{% endif%}</h1>
 		<a href="{{latest_inspiration.url}}" class="home-inspiration">
 			{% include inspiration/card.html
 				quote=latest_inspiration.quote

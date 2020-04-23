@@ -75,5 +75,4 @@ page_sections:
   id: inspiration
   background_color: pink
   title: Inspiration
-
 ---
