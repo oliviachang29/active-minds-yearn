@@ -10,6 +10,11 @@ fields:
   label: template
   hidden: true
   default: centered-text-w-bg-image
+- name: id
+  type: include
+  config: {}
+  template: id
+  label: id
 - name: background_image
   type: file
   config:
@@ -23,16 +28,6 @@ fields:
     required: false
   label: Title
   description: "<em>Optional </em>The title of the section."
-- name: button
-  type: include
-  config: {}
-  template: button
-  label: Button
-- name: id
-  type: include
-  config: {}
-  template: id
-  label: id
 - name: text
   type: textarea
   default: ''
@@ -43,3 +38,8 @@ fields:
       format: markdown
   label: Text
   description: "<em>Optional </em>Appears as a paragraph below the title."
+- name: button
+  type: include
+  config: {}
+  template: button
+  label: Button
