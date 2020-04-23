@@ -15,13 +15,6 @@ fields:
   config: {}
   template: id
   label: id
-- name: background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Background Image
-  description: "<em>Required </em>The background image that appears behind the text."
-  default: ''
 - name: title
   type: text
   config:
@@ -43,3 +36,10 @@ fields:
   config: {}
   template: button
   label: Button
+- name: background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+  description: "<em>Required </em>The background image that appears behind the text."
+  default: ''
