@@ -10,19 +10,29 @@ fields:
   hidden: true
 - type: file
   name: image
-  label: image
+  label: Background Image
+  description: "<em>Required </em>The background image behind the quote."
+  default: "/uploads/5.jpg"
 - type: textarea
   name: quote
-  label: quote
+  label: Quote
+  description: "<em>Required  </em>The inspirational quote."
+  config:
+    required: true
+    max: 470
+    min: 1
 - type: text
   name: author
-  label: author
+  label: Author
+  description: "<em>Optional </em>The author of the quote. You don't have to include
+    it if the quote if from yourself!"
 - name: date
   type: datetime
-  label: date
-  description: ''
+  label: Date
+  description: "<em>Required </em>The date you added this quote to the website. The
+    time doesn't matter, since it's not displayed."
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
