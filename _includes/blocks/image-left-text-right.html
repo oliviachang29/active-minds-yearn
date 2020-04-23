@@ -12,7 +12,7 @@
 						<h2>{{include.block.title}}</h2>
 					{% endif %}
 					{% if include.block.text and include.block.text != "" and include.block.text != nil %}
-						<p>{{include.block.text}}</p>
+						{{include.block.text | markdownify }}
 					{% endif %}
 					{% include button-renderer.html button=include.block.button
 	  								  button_classes="home-button button-large-padding" %}

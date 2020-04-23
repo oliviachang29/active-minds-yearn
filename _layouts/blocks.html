@@ -16,5 +16,7 @@ layout: master
 	        {% include blocks/recent-blog-post.html block=block %}
 	    {% when 'recent-inspiration' %}
 	        {% include blocks/recent-inspiration.html block=block %}
+	    {% when 'content' %}
+	        {% include blocks/content.html block=block %}
     {% endcase %}
 {% endfor %}

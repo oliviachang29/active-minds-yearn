@@ -70,7 +70,7 @@ page_sections:
     Curabitur blandit tempus porttitor.
   button:
     text: ''
-    link: ''
+    internal_link: ''
 - template: recent-inspiration
   id: inspiration
   background_color: pink
