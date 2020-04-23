@@ -9,6 +9,11 @@ fields:
   label: template
   default: carousel
   hidden: true
+- name: id
+  type: include
+  config: {}
+  template: id
+  label: id
 - name: carousel_items
   type: field_group_list
   fields:
@@ -37,13 +42,13 @@ fields:
     config: {}
     template: button
     label: Button
+  - name: item
+    type: include
+    config: {}
+    template: centered-text-w-bg-image
+    label: item
   config:
     min: 
     max: 
     labelField: 
   label: Carousel Items
-- name: id
-  type: include
-  config: {}
-  template: id
-  label: id
