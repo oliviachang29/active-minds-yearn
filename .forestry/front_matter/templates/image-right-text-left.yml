@@ -10,21 +10,19 @@ fields:
   label: template
   default: image-right-text-left
   hidden: true
-- name: id
-  type: text
-  config:
-    required: false
-  label: id
 - name: image
   type: file
   config:
     maxSize: 250
   label: image
+  description: "<em>Required </em>The image that appears to the right of the text."
 - name: title
   type: text
   config:
     required: false
   label: title
+  description: "<em>Optional </em>The title of the section. The large text that appears
+    above the paragraph."
 - name: text
   type: textarea
   default: ''
@@ -34,6 +32,7 @@ fields:
     schema:
       format: markdown
   label: text
+  description: "<em>Optional </em>The paragraph text that appears below the title."
 - name: button
   type: include
   config: {}
@@ -44,3 +43,8 @@ fields:
   config: {}
   template: include-background-color-select
   label: Background Color
+- name: id
+  type: include
+  config: {}
+  template: id
+  label: id
