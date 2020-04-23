@@ -9,7 +9,7 @@ fields:
     loading slowly, upload smaller photos! You can resize photos here: <a href="https://bulkresizephotos.com"
     title="https://bulkresizephotos.com" target="_blank">https://bulkresizephotos.com</a>'
   config:
-    maxSize: 5
+    maxSize: 1
 - name: featured_video
   type: textarea
   default: ''
@@ -18,7 +18,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Featured Video
+  label: Featured Youtube or Vimeo Video
   description: '<em>Optional </em>If you want the blog post to be a video, copy and
     paste the code for embedding a video from Youtube. This will replace the featured
     image. Instructions for embedding a video: <a href="https://support.google.com/youtube/answer/171780?hl=en"
