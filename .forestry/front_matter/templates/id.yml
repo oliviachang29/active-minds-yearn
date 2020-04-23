@@ -1,4 +1,11 @@
 ---
 label: id
 hide_body: true
-fields: []
+fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
+  description: "<em>Optional </em>The id of the section. You probably don't need to
+    change this."
