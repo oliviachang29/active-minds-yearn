@@ -9,3 +9,4 @@ fields:
   label: id
   description: "<em>Optional </em>The id of the section. You probably don't need to
     change this."
+  hidden: true
