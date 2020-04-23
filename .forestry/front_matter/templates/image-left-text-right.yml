@@ -28,7 +28,7 @@ fields:
       section: 
       file: 
       path: 
-  label: background_color
+  label: Background Color
 - name: image
   type: file
   config:
@@ -38,9 +38,9 @@ fields:
   type: text
   config:
     required: false
-  label: title
   description: "<em>Optional </em>The title of the section. Renders in the large text
     that appears above the paragraph."
+  label: Title
 - name: text
   type: textarea
   default: ''
@@ -54,4 +54,4 @@ fields:
   type: include
   config: {}
   template: button
-  label: button
+  label: Button
