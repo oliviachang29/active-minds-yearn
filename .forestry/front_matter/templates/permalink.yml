@@ -1,4 +1,9 @@
 ---
 label: Permalink
 hide_body: true
-fields: []
+fields:
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Permalink
