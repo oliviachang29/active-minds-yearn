@@ -1,6 +1,6 @@
 ---
 label: Content
-hide_body: false
+hide_body: true
 fields:
 - name: template
   type: text
@@ -14,3 +14,12 @@ fields:
   config: {}
   template: include-background-color-select
   label: Background Color
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: text
