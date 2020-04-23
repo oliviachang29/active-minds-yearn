@@ -9,11 +9,6 @@ fields:
   label: template
   default: carousel
   hidden: true
-- name: id
-  type: text
-  config:
-    required: false
-  label: id
 - name: carousel_items
   type: field_group_list
   fields:
@@ -47,3 +42,8 @@ fields:
     max: 
     labelField: 
   label: Carousel Items
+- name: id
+  type: include
+  config: {}
+  template: id
+  label: id
