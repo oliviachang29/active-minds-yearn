@@ -1,6 +1,6 @@
 ---
 - type: Email
-  url: https://mail.google.com/mail/u/0/#inbox
+  url: ''
 - type: Instagram
   url: https://www.instagram.com/activemindsyearn
 - type: Twitter
