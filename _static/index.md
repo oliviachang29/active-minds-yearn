@@ -35,11 +35,7 @@ page_sections:
   background_color: white
   image: "/uploads/about_me.jpeg"
   title: Hi, I'm Aminata
-  text: Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel
-    augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis
-    ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus,
-    porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.
-    Curabitur blandit tempus porttitor.
+  text: ''
   button:
     text: About Me
     internal_link: _static/about.md
@@ -77,8 +73,8 @@ page_sections:
   id: inspiration
   background_color: pink
   title: Inspiration
----
 
+---
 <!-- Modal -->
 <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
