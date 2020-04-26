@@ -1,6 +1,6 @@
 ---
 - type: Email
-  url: mailto:hello@example.com
+  url: https://mail.google.com/mail/u/0/#inbox
 - type: Instagram
   url: https://www.instagram.com/activemindsyearn
 - type: Twitter
