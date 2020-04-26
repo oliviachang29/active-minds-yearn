@@ -40,7 +40,7 @@ fields:
   label: Instagram Feed Title
   default: Latest Instagram Posts
   description: "<em>Required </em>The title above the Instagram Feed."
-- name: adsense_code
+- name: adsense_header_code
   type: textarea
   default: ''
   config:
@@ -48,6 +48,15 @@ fields:
     wysiwyg: true
     schema:
       format: html
-  label: adsense_code
+  label: adsense_header_code
+- name: adsense_ad_code
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: adsense_ad_code
 pages:
 - _data/general.yml

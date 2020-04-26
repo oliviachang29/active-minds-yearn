@@ -7,4 +7,5 @@ newsletter:
   title: Subscribe to my newsletter
   description: Keep up with the latest blog posts and daily motivational quotes.
 instagram_feed_title: Latest Instagram Posts
-adsense_code:
+adsense_header_code: '<script data-ad-client="ca-pub-7378586794569973" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+adsense_ad_code:
