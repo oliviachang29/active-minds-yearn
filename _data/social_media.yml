@@ -1,6 +1,6 @@
 ---
 - type: Email
-  url: ''
+  url: 'email@example.com'
 - type: Instagram
   url: https://www.instagram.com/activemindsyearn
 - type: Twitter

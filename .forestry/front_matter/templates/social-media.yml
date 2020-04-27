@@ -30,7 +30,7 @@ fields:
   - type: text
     name: url
     label: Link/URL
-    description: 'The URL of the social media link. ex: <em>https://instagram.com/username</em>'
+    description: 'The URL of the social media link. ex: <em>https://instagram.com/username</em> or <em>email@gmail.com</em>'
   config:
     labelField: type
   label: Social Media

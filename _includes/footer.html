@@ -12,7 +12,7 @@
 		<ul class="footer-links footer-social-media">
 			{% for link in site.data.social_media %}
 				<li>
-					<a href="{{link.url}}" target="_blank">
+					<a href="{% include social_media_link_renderer.html link=link %}" target="_blank">
 						<span>{% include social_media_icon_renderer.html link=link %}</span>
 						<span>{{link.type}}</span>
 					</a>
