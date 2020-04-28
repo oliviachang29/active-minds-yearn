@@ -35,40 +35,20 @@ page_sections:
   background_color: white
   image: "/uploads/about_me.jpeg"
   title: Hi, I'm Aminata
-  text: ''
+  text: I am an young muslim athelete. My mission is to inspire and motivate all who
+    yearn to be the best version of themselves. Life is full of lessons and we all
+    experience things that make us who we are. Through this blog I will voice who
+    I am, who I've become, advice on how to deal with what life throws at us, but
+    most importantly my hope is that through my experiences you can learn how to become
+    the best version of  you. Together we will discover ways to move forward, grow,
+    and love ourselves.
   button:
     text: About Me
     internal_link: _static/about.md
-- template: image-right-text-left
-  id: section_2
-  background_color: pink
-  image: "/uploads/6.jpg"
-  title: Section 2
-  text: Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel
-    augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis
-    ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus,
-    porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.
-    Curabitur blandit tempus porttitor.
-  button:
-    text: ''
-    internal_link: ''
 - template: recent-blog-post
   id: blog
   background_color: white
   title: Latest Blog Post
-- template: centered-text-w-bg-image
-  id: cta
-  background_image: "/uploads/7.jpg"
-  mini_title: ''
-  title: Section 3
-  text: Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel
-    augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis
-    ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus,
-    porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum.
-    Curabitur blandit tempus porttitor.
-  button:
-    text: ''
-    internal_link: ''
 - template: recent-inspiration
   id: inspiration
   background_color: pink
