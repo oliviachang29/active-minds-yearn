@@ -24,12 +24,12 @@ page_sections:
       text: Read More
       internal_link: _inspiration/march-3-2020.md
   - background_image: "/uploads/3.jpg"
-    title: Demo Content and Everything
+    title: Latest Blog Post
     mini_title: Featured on the blog
     text: Check out my latest blog post!
     button:
       text: Read More
-      internal_link: _posts/2018-06-30-demo-content-and-everything.md
+      internal_link: _posts/2020-02-06-demo_post_3.md
 - template: image-left-text-right
   id: about
   background_color: white
