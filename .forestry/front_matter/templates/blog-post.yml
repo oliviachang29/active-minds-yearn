@@ -55,5 +55,4 @@ fields:
   description: 'Words that relate to the blog post. For example: <em>inspiration,
     wellness, nature, courage</em>'
 pages:
-- _posts/2020-02-06-demo_post_3 copy.md
 - _posts/2020-02-06-demo_post_3.md
