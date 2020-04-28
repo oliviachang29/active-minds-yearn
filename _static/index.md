@@ -38,9 +38,9 @@ page_sections:
   text: I am a young, Muslim athlete. My mission is to inspire and motivate all who
     yearn to be the best version of themselves. Life is full of lessons and we all
     experience things that make us who we are. Through this blog, I will voice who
-    I am; who I've become; advising  on how to deal with what life throws at us; but
+    I am; who I've become; advising on how to deal with what life throws at us; but
     most importantly my hope is that through my experiences you can learn how to become
-    the best version of  you. Together we will discover ways to move forward, grow,
+    the best version of you. Together we will discover ways to move forward, grow,
     and love ourselves.
   button:
     text: About Me
