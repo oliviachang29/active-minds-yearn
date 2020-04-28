@@ -2,27 +2,25 @@
 	<div class="container-widths">
 		{% if include.post.date or include.post.tags %}
 			<div class="page-mini-title post-date-n-tags post-page-date-n-tags d-flex flex-row justify-content-center align-items-center">
-				{% if include.post.date %}
+				{% if include.post.date and include.post.date != "" and include.post.date != nil %}
 					<span class="post-date">{{include.post.date | date_to_string}}</span>
 				{% endif %}
-				{% if include.post.tags %}
-					{% include blog_post/tags.html tags=include.post.tags %}
-				{% endif %}
+				{% include blog_post/tags.html tags=include.post.tags %}
 			</div>
 		{% endif %}
-		{% if include.post.title %}
+		{% if include.post.title and include.post.title != "" and include.post.title != nil %}
 			<h1 class="page-title post-title post-page-title">{{include.post.title}}</h1>
 		{% endif %}
-		{% if include.post.subheading %}
+		{% if include.post.subheading and include.post.subheading != "" and include.post.subheading != nil %}
 			<h3 class="post-subheading post-page-subheading">{{include.post.subheading}}</h3>
 		{% endif %}
-		{% if include.post.featured_video %}
+		{% if include.post.featured_video and include.post.featured_video != "" and include.post.featured_video != nil %}
 			<div class="post-page-media-container post-page-video-container">
 				{{ include.post.featured_video }}
 			</div>
 		{% endif %}
-		{% if include.post.featured_image %}
-			{% unless include.post.featured_video %}
+		{% if include.post.featured_image and include.post.featured_image != "" and include.post.featured_image != nil %}
+			{% unless include.post.featured_video and include.post.featured_video != "" and include.post.featured_video != nil %}
 				<div class="post-page-media-container post-page-image-container">
 					<img src="{{include.post.featured_image}}" class="lazy post-page-image">
 				</div>
