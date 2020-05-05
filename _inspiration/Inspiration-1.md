@@ -9,6 +9,5 @@ quote: I hope that in this year to come, you make mistakes.Because if you are ma
 author: Neil Gaiman
 date: 2020-05-05 04:00:00 +0000
 image: "/uploads/w-qjCHPZbeXCQ-unsplash.jpg"
-published: false
 
 ---
