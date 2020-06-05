@@ -5,6 +5,5 @@ quote: Be the voice of those who no longer have a voice. Be the voice for your p
 author: 'Aminata Sangare '
 date: 2020-06-04 04:00:00 +0000
 image: "/uploads/4.jpg"
-published: false
 
 ---
