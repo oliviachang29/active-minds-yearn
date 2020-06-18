@@ -8,9 +8,9 @@ title: " Take it from me "
 subheading: ''
 
 ---
-**A word of advice** 
+**A word of advice**
 
-My biggest epiphany in high school was realizing who I wanted to become by evaluating who I was, and knowing that wasn’t the path I wanted to travel. For me, high school was the start of making life-changing decisions. This was when my most significant growth occurred. Listen, during this time is when you are allowed to make mistakes while learning about yourself. Take advantage of the journey and don’t forget to be reflective. Being reflective is one of the most important things you'll need to do, not just in highschool but in life. We as young adults are always learning, growing and sometimes we need to be our biggest critic but as well as realizing that self reflection is a way to see improvement and set goals for oneself.
+My biggest epiphany in high school was realizing who I wanted to become by evaluating who I was, and knowing what paths I did not want to travel. For me, high school was the start of making life-changing decisions. This was when my most significant growth occurred. Listen, during this time is when you are allowed to make mistakes while learning about yourself. Take advantage of the journey and don’t forget to be reflective. Being reflective is one of the most important things you'll need to do, not just in highschool but in life. We as young adults are always learning, growing and sometimes we need to be our biggest critic but as well as realizing that self reflection is a way to see improvement and set goals for oneself.
 
 **High school wasn’t perfect**
 
