@@ -9,7 +9,7 @@ fields:
     loading slowly, upload smaller photos! You can resize photos here: <a href="https://bulkresizephotos.com"
     title="https://bulkresizephotos.com" target="_blank">https://bulkresizephotos.com</a>'
   config:
-    maxSize: 1
+    maxSize: 20
 - name: featured_video
   type: textarea
   default: ''
