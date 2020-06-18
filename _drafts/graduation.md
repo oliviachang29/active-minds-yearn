@@ -5,7 +5,7 @@ tags:
 - graduation
 featured_image: "/uploads/graduation-picture.jpg"
 featured_video: ''
-title: " "
+title: " Take it from me"
 subheading: ''
 
 ---
