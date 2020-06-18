@@ -2,7 +2,6 @@
 date: 2020-06-18 02:00:15 +0000
 tags:
 - high school
-- graduation
 featured_image: "/uploads/graduation-picture.jpg"
 featured_video: ''
 title: " Take it from me "
