@@ -39,7 +39,7 @@ fields:
     title="" target="_blank">https://bulkresizephotos.com</a>'
   default: ''
   config:
-    maxSize: 1
+    maxSize: 20
 pages:
 - _inspiration/Inspiration-1.md
 - _inspiration/Inspiration-2.md
