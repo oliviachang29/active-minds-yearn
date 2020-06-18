@@ -24,12 +24,12 @@ page_sections:
       text: Read More
       internal_link: _inspiration/march-3-2020.md
   - background_image: "/uploads/3.jpg"
-    title: Latest Blog Post
+    title: Take it from me
     mini_title: Featured on the blog
-    text: Check out my latest blog post!
+    text: Check out my blog post on graduation!
     button:
       text: Read More
-      internal_link: _posts/2020-02-06-demo_post_3.md
+      internal_link: _posts/2020-06-18-graduation.md
 - template: image-left-text-right
   id: about
   background_color: white
