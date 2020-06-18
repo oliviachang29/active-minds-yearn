@@ -5,7 +5,7 @@ tags:
 - graduation
 featured_image: "/uploads/graduation-picture.jpg"
 featured_video: ''
-title: Graduation
+title: " "
 subheading: ''
 
 ---
@@ -16,5 +16,7 @@ My biggest epiphany in high school was realizing who I wanted to become by evalu
 **High school wasn’t perfect**
 
 School-work, friendships, depression, athletics, drama, college process are what my days consisted of. What I’ve learned through these experiences is that it’s okay to make mistakes, to be confused sometimes, and though it may sound like a cliche, it’s the truth. We tend to feel defeated when things do not go our way— when we fail— but we don’t ever realize that everything that happens to us now is happening in order to prepare us for the future, and is also nurturing us to be the best version of ourselves.
+
+**Life Lessons**
 
 As a student-athlete, I was able to create life-long friendships, work alongside different types of people. I learned how to manage my time, from Amateur Athletic Union ( AAU ) in the summer, to workouts and practices after school. To sore nights, feeling defeated mentally and physically; to the days where I cried because of being stressed out. These tough trials allowed me to realize that with patience, and dedications and grit anything is possible. Through my high school experiences both at Careers In Sports High school and Monsignor Scanlan High school, I became a young woman. Through this test of time, I became the Aminata Sangare you see today.
