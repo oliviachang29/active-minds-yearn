@@ -33,7 +33,7 @@ page_sections:
 - template: image-left-text-right
   id: about
   background_color: white
-  image: "/uploads/about_me.jpeg"
+  image: "/uploads/graduation-picture.jpg"
   title: Hi, I'm Aminata
   text: I am a young, Muslim athlete. My mission is to inspire and motivate all who
     yearn to be the best version of themselves. Life is full of lessons and we all
